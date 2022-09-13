@@ -37,8 +37,10 @@ const { index } = Astro.props;
       >Informasi</a
     >
     <a
-      href="#"
-      class="text-gray-600 hover:text-blue-500 active:text-blue-700 text-lg font-semibold transition duration-100"
+      href="/layanan"
+      class={`${
+        index === 4 ? "text-blue-500" : "text-gray-600"
+      } hover:text-blue-500 active:text-blue-700 text-lg font-semibold transition duration-100`}
       >Layanan</a
     >
     <a
