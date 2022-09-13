@@ -1,0 +1,74 @@
+---
+export interface Props {
+  index: number;
+}
+
+const { index } = Astro.props;
+---
+
+<header class="flex justify-between items-center py-4 md:py-8">
+  <a
+    href="/"
+    class="inline-flex items-center text-black-800 text-2xl md:text-3xl font-bold gap-2.5 text-gray-800"
+    aria-label="logo"
+  >
+    <img src="/logo.png" alt="" class="w-6" width="64" height="64" />
+    <span class="-mt-2 text-gray-800">BRIDA NTB</span>
+  </a>
+  <nav class="hidden lg:flex gap-12">
+    <a
+      href="/"
+      class={`hover:text-blue-500 text-lg font-semibold ${
+        index === 1 ? "text-blue-500" : "text-gray-600"
+      }`}>Beranda</a
+    >
+    <a
+      href="/program"
+      class={`${
+        index === 2 ? "text-blue-500" : "text-gray-600"
+      } hover:text-blue-500 active:text-blue-700 text-lg font-semibold transition duration-100`}
+      >Program</a
+    >
+    <a
+      href="/informasi"
+      class={`${
+        index === 3 ? "text-blue-500" : "text-gray-600"
+      } hover:text-blue-500 active:text-blue-700 text-lg font-semibold transition duration-100`}
+      >Informasi</a
+    >
+    <a
+      href="#"
+      class="text-gray-600 hover:text-blue-500 active:text-blue-700 text-lg font-semibold transition duration-100"
+      >Layanan</a
+    >
+    <a
+      href="#"
+      class="text-gray-600 hover:text-blue-500 active:text-blue-700 text-lg font-semibold transition duration-100"
+      >Tentang</a
+    >
+  </nav>
+  <a
+    href="#"
+    class="hidden lg:inline-block bg-blue-500 hover:bg-gray-300 focus-visible:ring ring-blue-300 text-white active:text-white text-sm md:text-base font-semibold text-center rounded-lg outline-none transition duration-100 px-8 py-3"
+    >Kontak Kami</a
+  >
+
+  <button
+    type="button"
+    class="inline-flex items-center lg:hidden bg-blue-500 hover:bg-gray-300 focus-visible:ring ring-blue-300 text-white active:text-white text-sm md:text-base font-semibold rounded-lg gap-2 px-2.5 py-2"
+  >
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      class="h-6 w-6"
+      viewBox="0 0 20 20"
+      fill="currentColor"
+    >
+      <path
+        fill-rule="evenodd"
+        d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h6a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+        clip-rule="evenodd"></path>
+    </svg>
+
+    Menu
+  </button>
+</header>
