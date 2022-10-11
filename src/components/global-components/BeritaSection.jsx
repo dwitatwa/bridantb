@@ -1,5 +1,11 @@
 import { useState, useEffect } from "react";
-import { createClient } from "contentful";
+
+// deployment
+// import { createClient } from "contentful";
+
+// production
+import contentful from "contentful";
+const { createClient } = contentful;
 
 export default function BeritaSection() {
   const [minimum, setMinimum] = useState(0);
