@@ -6,4 +6,4 @@
 
 
 ## Project Description
-Website ini dibuat menggunakan [Astro](https://astro.build) dengan memanfaatkan [Contentful]('https://www.contentful.com/') sebagai Content Management System
+Website ini dibuat menggunakan [Astro](https://astro.build) dengan memanfaatkan [Contenful](https://contentful.com) sebagai Content Management System (CMS)
