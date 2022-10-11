@@ -1,6 +1,6 @@
 ---
 import Layout from "../../layouts/Layout.astro";
-import InformasiSection from "../../components/global-components/InformasiSection.astro";
+import InformasiSection from "../../components/global-components/InformasiSection.jsx";
 import MenuSection from "../../components/page-components/informasi/MenuSection.astro";
 import StatistikSection from "../../components/page-components/informasi/StatistikSection.astro";
 import BeritaSection from "../../components/global-components/BeritaSection.jsx";
@@ -39,7 +39,7 @@ import BeritaSection from "../../components/global-components/BeritaSection.jsx"
     </div>
   </section>
   <MenuSection />
-  <InformasiSection />
+  <InformasiSection client:load />
   <BeritaSection client:load />
   <StatistikSection />
 </Layout>
