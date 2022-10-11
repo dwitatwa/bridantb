@@ -11,6 +11,7 @@
   },
   "dependencies": {
     "astro": "^1.1.5",
+    "contentful": "^9.2.5",
     "swiper": "^8.3.2"
   },
   "devDependencies": {

@@ -2,8 +2,8 @@
 import Layout from "../layouts/Layout.astro";
 import HeroSection from "../components/page-components/landing/HeroSection.astro";
 import ProgramSection from "../components/page-components/landing/ProgramSection.astro";
-import InformasiSection from "../components/page-components/landing/InformasiSection.astro";
-import BeritaSection from "../components/page-components/landing/BeritaSection.astro";
+import InformasiSection from "../components/global-components/InformasiSection.astro";
+import BeritaSection from "../components/global-components/BeritaSection.jsx";
 import TeamSection from "../components/page-components/landing/TeamSection.astro";
 ---
 
@@ -12,7 +12,7 @@ import TeamSection from "../components/page-components/landing/TeamSection.astro
     <HeroSection />
     <ProgramSection />
     <InformasiSection />
-    <BeritaSection />
+    <BeritaSection client:load/>
     <TeamSection />
   </main>
 </Layout>
