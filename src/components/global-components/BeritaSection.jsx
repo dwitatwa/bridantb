@@ -1,9 +1,4 @@
 import { useState, useEffect } from "react";
-
-// deployment
-// import { createClient } from "contentful";
-
-// production
 import contentful from "contentful";
 const { createClient } = contentful;
 
