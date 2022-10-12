@@ -1,8 +1,8 @@
 import { useState, useEffect } from "react";
-// import { createClient } from "contentful";
+import { createClient } from "contentful";
 
-import contentful from "contentful";
-const { createClient } = contentful;
+// import contentful from "contentful";
+// const { createClient } = contentful;
 
 export default function BeritaSection() {
   const [minimum, setMinimum] = useState(0);
@@ -66,7 +66,7 @@ export default function BeritaSection() {
         </div>
       </div>
       {isLoading ? (
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 md:gap-6 xl:gap-8">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-2 xl:grid-cols-4 gap-4 md:gap-6 xl:gap-8">
           <div className="bg-slate-200 h-48 md:h-64 xl:h-96 flex flex-col rounded-lg shadow-lg overflow-hidden relative flex justify-center items-center text-slate-500">
             Loading...
           </div>
@@ -81,7 +81,7 @@ export default function BeritaSection() {
           </div>
         </div>
       ) : (
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 md:gap-6 xl:gap-8">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-2 xl:grid-cols-4 gap-4 md:gap-6 xl:gap-8">
           {items.slice(minimum, maximum).map((item) => (
             <a
               href="#"
@@ -112,7 +112,7 @@ export default function BeritaSection() {
       )}
 
       <div className="flex justify-between items-start sm:items-center gap-8 mt-5">
-        <p className="max-w-screen-sm text-gray-500 text-sm lg:text-base">
+        <p className="hidden md:block max-w-screen-sm text-gray-500 text-sm lg:text-base">
           Kumpulan berita mengenai pelaksanaan program dan kegiatan seputar
           Badan Riset dan Inovasi Daerah Provinsi Nusa Tenggara Barat
         </p>

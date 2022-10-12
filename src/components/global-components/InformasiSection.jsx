@@ -54,7 +54,7 @@ export default function InformasiSection() {
 
           <div className="flex flex-col absolute z-50 bottom-5">
             <span className="text-gray-300">Hasil Seleksi Administrasi</span>
-            <span className="text-white text-lg lg:text-xl font-semibold">
+            <span className="text-white text-lg lg:text-3xl font-semibold">
               Beasiswa NTB Tujuan Malaysia
             </span>
           </div>
@@ -75,16 +75,16 @@ export default function InformasiSection() {
 
           <div className="flex flex-col absolute z-50 bottom-5">
             <span className="text-gray-300">Pengumuman Kelas Pemrograman</span>
-            <span className="text-white text-lg lg:text-xl font-semibold">
+            <span className="text-white text-lg lg:text-3xl font-semibold">
               Brida School Academy
             </span>
           </div>
         </a>
       </div>
       <div className="flex justify-between items-start sm:items-center gap-8 mt-5">
-        <p className="max-w-screen-sm text-gray-500 text-sm lg:text-base">
-          Kumpulan berita mengenai pelaksanaan program dan kegiatan seputar
-          Badan Riset dan Inovasi Daerah Provinsi Nusa Tenggara Barat
+        <p className="hidden md:block max-w-screen-sm text-gray-500 text-sm lg:text-base">
+          Kumpulan informasi terbaru mengenai pelaksanaan program dan kegiatan
+          seputar Badan Riset dan Inovasi Daerah Provinsi Nusa Tenggara Barat
         </p>
 
         <a
