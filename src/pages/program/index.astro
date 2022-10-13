@@ -1,15 +1,14 @@
 ---
 import Layout from "../../layouts/Layout.astro";
-import BeritaProgram from "../../components/page-components/program/BeritaProgram";
-import background from "../../assets/programBack.svg";
+import background from "@assets/programBack.svg";
 ---
 
-<Layout title="Program BRIDA NTB" menu={2}>
+<Layout title="Program BRIDA NTB" menu={3}>
   <section
     class="min-h-20 h-20 mb-10 flex justify-center items-center flex-1 shrink-0 bg-blue-900 overflow-hidden shadow-lg relative py-40 md:py-46 xl:py-44"
     slot="hero"
   >
-    <div class="absolute inset-0 w-full h-full">
+    <div class="absolute inset-0 w-[1100px] lg:w-full h-full">
       <img src={background} />
     </div>
     <div class="sm:max-w-5xl flex flex-col items-center relative p-4">
