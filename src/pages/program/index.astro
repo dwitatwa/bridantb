@@ -1,6 +1,7 @@
 ---
 import Layout from "../../layouts/Layout.astro";
 import BeritaProgram from "../../components/page-components/program/BeritaProgram";
+import background from "../../assets/programBack.svg";
 ---
 
 <Layout title="Program BRIDA NTB" menu={2}>
@@ -9,58 +10,7 @@ import BeritaProgram from "../../components/page-components/program/BeritaProgra
     slot="hero"
   >
     <div class="absolute inset-0 w-full h-full">
-      <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" class="w-[1000px] lg:w-full" preserveAspectRatio="none" viewBox="0 0 1440 560">
-        <g mask="url(&quot;#SvgjsMask1301&quot;)" fill="none">
-            <rect width="1440" height="560" x="0" y="0" fill="rgba(31, 58, 138, 1)"></rect>
-            <path d="M242.64 317.75 L291.27 365.21000000000004L220.04265625132925 388.3923437486708z" fill="rgba(26, 134, 241, 1)"></path>
-            <rect width="92.2" height="92.2" clip-path="url(&quot;#SvgjsClipPath1302&quot;)" x="130.15" y="119.11" fill="url(#SvgjsPattern1303)" transform="rotate(315.63, 176.25, 165.21)"></rect>
-            <circle r="46.666666666666664" cx="723.42" cy="115.47" stroke="rgba(26, 134, 241, 1)" stroke-width="1" stroke-dasharray="4, 4"></circle>
-            <rect width="273.12" height="273.12" clip-path="url(&quot;#SvgjsClipPath1304&quot;)" x="1044.58" y="365.18" fill="url(#SvgjsPattern1305)" transform="rotate(243.89, 1181.14, 501.74)"></rect>
-            <circle r="46.666666666666664" cx="241.05" cy="322.24" fill="rgba(26, 134, 241, 1)"></circle>
-            <path d="M1365.3799999999999 390.22 L1393.54 296.94L1431.5827779499457 395.7027779499458z" stroke="rgba(26, 134, 241, 1)" stroke-width="1.98"></path>
-            <rect width="60" height="60" clip-path="url(&quot;#SvgjsClipPath1306&quot;)" x="506.84" y="38.8" fill="url(#SvgjsPattern1307)" transform="rotate(203.32, 536.84, 68.8)"></rect>
-            <rect width="372" height="372" clip-path="url(&quot;#SvgjsClipPath1308&quot;)" x="-173.52" y="204.49" fill="url(#SvgjsPattern1309)" transform="rotate(114.75, 12.48, 390.49)"></rect>
-            <path d="M902.42 396.74 L1040.8 398.92999999999995L895.9005433528464 473.54445664715354z" fill="rgba(26, 134, 241, 1)"></path>
-            <circle r="48.524670608047636" cx="1326.93" cy="156.23" fill="rgba(26, 134, 241, 1)"></circle>
-            <rect width="103.6" height="103.6" clip-path="url(&quot;#SvgjsClipPath1310&quot;)" x="613.07" y="102.15" fill="url(#SvgjsPattern1311)" transform="rotate(299.03, 664.87, 153.95)"></rect>
-            <circle r="46.666666666666664" cx="709.15" cy="531.99" stroke="rgba(26, 134, 241, 1)" stroke-width="1.31" stroke-dasharray="2, 2"></circle>
-        </g>
-        <defs>
-            <mask id="SvgjsMask1301">
-                <rect width="1440" height="560" fill="#ffffff"></rect>
-            </mask>
-            <pattern x="0" y="0" width="9.22" height="9.22" patternUnits="userSpaceOnUse" id="SvgjsPattern1303">
-                <path d="M0 9.22L4.61 0L9.22 9.22" stroke="rgba(26, 134, 241, 1)" fill="none"></path>
-            </pattern>
-            <clipPath id="SvgjsClipPath1302">
-                <circle r="23.05" cx="176.25" cy="165.21"></circle>
-            </clipPath>
-            <pattern x="0" y="0" width="11.38" height="11.38" patternUnits="userSpaceOnUse" id="SvgjsPattern1305">
-                <path d="M5.69 1L5.69 10.38M1 5.69L10.38 5.69" stroke="rgba(26, 134, 241, 1)" fill="none" stroke-width="4.47"></path>
-            </pattern>
-            <clipPath id="SvgjsClipPath1304">
-                <circle r="68.28" cx="1181.14" cy="501.74"></circle>
-            </clipPath>
-            <pattern x="0" y="0" width="6" height="6" patternUnits="userSpaceOnUse" id="SvgjsPattern1307">
-                <path d="M0 6L3 0L6 6" stroke="rgba(26, 134, 241, 1)" fill="none"></path>
-            </pattern>
-            <clipPath id="SvgjsClipPath1306">
-                <circle r="15" cx="536.84" cy="68.8"></circle>
-            </clipPath>
-            <pattern x="0" y="0" width="6" height="6" patternUnits="userSpaceOnUse" id="SvgjsPattern1309">
-                <path d="M0 6L3 0L6 6" stroke="rgba(26, 134, 241, 1)" fill="none"></path>
-            </pattern>
-            <clipPath id="SvgjsClipPath1308">
-                <circle r="93" cx="12.48" cy="390.49"></circle>
-            </clipPath>
-            <pattern x="0" y="0" width="7.4" height="7.4" patternUnits="userSpaceOnUse" id="SvgjsPattern1311">
-                <path d="M3.7 1L3.7 6.4M1 3.7L6.4 3.7" stroke="rgba(26, 134, 241, 1)" fill="none" stroke-width="1.48"></path>
-            </pattern>
-            <clipPath id="SvgjsClipPath1310">
-                <circle r="25.9" cx="664.87" cy="153.95"></circle>
-            </clipPath>
-        </defs>
-    </svg>
+      <img src={background} />
     </div>
     <div class="sm:max-w-5xl flex flex-col items-center relative p-4">
       <h1
@@ -124,7 +74,7 @@ import BeritaProgram from "../../components/page-components/program/BeritaProgra
               </p>
               <a
                 href="#"
-                class="text-blue-500 hover:text-blue-600 active:text-blue-700 font-bold transition duration-100"
+                class="text-blue-900 hover:text-blue-600 active:text-blue-700 font-bold transition duration-100"
                 >More</a
               >
             </div>
@@ -161,7 +111,7 @@ import BeritaProgram from "../../components/page-components/program/BeritaProgra
               </p>
               <a
                 href="/program/beasiswa-ntb"
-                class="text-blue-500 hover:text-blue-600 active:text-blue-700 font-bold transition duration-100"
+                class="text-blue-900 hover:text-blue-600 active:text-blue-700 font-bold transition duration-100"
                 >Selengkapnya</a
               >
             </div>
@@ -198,7 +148,7 @@ import BeritaProgram from "../../components/page-components/program/BeritaProgra
               </p>
               <a
                 href="#"
-                class="text-blue-500 hover:text-blue-600 active:text-blue-700 font-bold transition duration-100"
+                class="text-blue-900 hover:text-blue-600 active:text-blue-700 font-bold transition duration-100"
                 >More</a
               >
             </div>
@@ -233,7 +183,7 @@ import BeritaProgram from "../../components/page-components/program/BeritaProgra
               </p>
               <a
                 href="#"
-                class="text-blue-500 hover:text-blue-600 active:text-blue-700 font-bold transition duration-100"
+                class="text-blue-900 hover:text-blue-600 active:text-blue-700 font-bold transition duration-100"
                 >More</a
               >
             </div>
@@ -270,7 +220,7 @@ import BeritaProgram from "../../components/page-components/program/BeritaProgra
               </p>
               <a
                 href="#"
-                class="text-blue-500 hover:text-blue-600 active:text-blue-700 font-bold transition duration-100"
+                class="text-blue-900 hover:text-blue-600 active:text-blue-700 font-bold transition duration-100"
                 >More</a
               >
             </div>
@@ -307,7 +257,7 @@ import BeritaProgram from "../../components/page-components/program/BeritaProgra
               </p>
               <a
                 href="#"
-                class="text-blue-500 hover:text-blue-600 active:text-blue-700 font-bold transition duration-100"
+                class="text-blue-900 hover:text-blue-600 active:text-blue-700 font-bold transition duration-100"
                 >More</a
               >
             </div>
@@ -344,7 +294,7 @@ import BeritaProgram from "../../components/page-components/program/BeritaProgra
               </p>
               <a
                 href="#"
-                class="text-blue-500 hover:text-blue-600 active:text-blue-700 font-bold transition duration-100"
+                class="text-blue-900 hover:text-blue-600 active:text-blue-700 font-bold transition duration-100"
                 >More</a
               >
             </div>
@@ -381,7 +331,7 @@ import BeritaProgram from "../../components/page-components/program/BeritaProgra
               </p>
               <a
                 href="#"
-                class="text-blue-500 hover:text-blue-600 active:text-blue-700 font-bold transition duration-100"
+                class="text-blue-900 hover:text-blue-600 active:text-blue-700 font-bold transition duration-100"
                 >More</a
               >
             </div>
@@ -418,7 +368,7 @@ import BeritaProgram from "../../components/page-components/program/BeritaProgra
               </p>
               <a
                 href="#"
-                class="text-blue-500 hover:text-blue-600 active:text-blue-700 font-bold transition duration-100"
+                class="text-blue-900 hover:text-blue-600 active:text-blue-700 font-bold transition duration-100"
                 >More</a
               >
             </div>
