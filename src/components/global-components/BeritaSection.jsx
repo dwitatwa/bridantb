@@ -67,16 +67,16 @@ export default function BeritaSection() {
       </div>
       {isLoading ? (
         <div className="grid sm:grid-cols-2 lg:grid-cols-2 xl:grid-cols-4 gap-4 md:gap-6 xl:gap-8">
-          <div className="bg-slate-200 h-48 md:h-64 xl:h-96 flex flex-col rounded-lg shadow-lg overflow-hidden relative flex justify-center items-center text-slate-500">
+          <div className="bg-slate-200 h-48 md:h-64 xl:h-96  flex-col rounded-lg shadow-lg overflow-hidden relative flex justify-center items-center text-slate-500">
             Loading...
           </div>
-          <div className="bg-slate-200 h-48 md:h-64 xl:h-96 flex flex-col rounded-lg shadow-lg overflow-hidden relative flex justify-center items-center text-slate-500">
+          <div className="bg-slate-200 h-48 md:h-64 xl:h-96  flex-col rounded-lg shadow-lg overflow-hidden relative flex justify-center items-center text-slate-500">
             Loading...
           </div>
-          <div className="bg-slate-200 h-48 md:h-64 xl:h-96 flex flex-col rounded-lg shadow-lg overflow-hidden relative flex justify-center items-center text-slate-500">
+          <div className="bg-slate-200 h-48 md:h-64 xl:h-96  flex-col rounded-lg shadow-lg overflow-hidden relative flex justify-center items-center text-slate-500">
             Loading...
           </div>
-          <div className="bg-slate-200 h-48 md:h-64 xl:h-96 flex flex-col rounded-lg shadow-lg overflow-hidden relative flex justify-center items-center text-slate-500">
+          <div className="bg-slate-200 h-48 md:h-64 xl:h-96  flex-col rounded-lg shadow-lg overflow-hidden relative flex justify-center items-center text-slate-500">
             Loading...
           </div>
         </div>
