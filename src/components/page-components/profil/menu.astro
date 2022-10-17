@@ -1,0 +1,79 @@
+---
+const menu = [
+  {
+    title: "Tugas dan Fungsi Pokok",
+    desc: "Tugas dan Fungsi Pokok Badan Riset dan Inovasi Daerah Provinsi NTB",
+    link: "/profil/tugas-dan-fungsi-pokok",
+    icon: "/icons/tugas-dan-fungsi.svg",
+  },
+  {
+    title: "Profil Kepala Badan",
+    desc: "Profil lengkap Kepala Badan Riset dan Inovasi Daerah Provinsi NTB",
+    link: "/profil",
+    icon: "/icons/tugas-dan-fungsi.svg",
+  },
+  {
+    title: "Profil Sekretaris Badan",
+    desc: "Profil lengkap Sekretaris Badan Riset dan Inovasi Daerah Provinsi NTB",
+    link: "/profil",
+    icon: "/icons/tugas-dan-fungsi.svg",
+  },
+  {
+    title: "Profil Kasubbag Umum",
+    desc: "Profil lengkap Kepala Sub Bagian Umum dan Kepegawaian Badan Riset dan Inovasi Daerah Provinsi NTB",
+    link: "/profil/tugas-dan-fungsi-pokok",
+    icon: "/icons/tugas-dan-fungsi.svg",
+  },
+  {
+    title: "Profil Jabatan Fungsional",
+    desc: "Profil lengkap Pejabat Fungsional Badan Riset dan Inovasi Daerah Provinsi NTB",
+    link: "/profil",
+    icon: "/icons/tugas-dan-fungsi.svg",
+  },
+  {
+    title: "Profil Bidang",
+    desc: "Profil lengkap Bidang - Bidang pada Badan Riset dan Inovasi Daerah Provinsi NTB",
+    link: "/profil",
+    icon: "/icons/tugas-dan-fungsi.svg",
+  },
+  {
+    title: "Struktur Organisasi",
+    desc: "Struktur Organisasi Pengurus Badan Riset dan Inovasi Daerah Provinsi NTB",
+    link: "/profil",
+    icon: "/icons/tugas-dan-fungsi.svg",
+  },
+  {
+    title: "Kalender Kegiatan BRIDA",
+    desc: "Kalender kegiatan Badan Riset dan Inovasi Daerah Provinsi NTB",
+    link: "/profil",
+    icon: "/icons/tugas-dan-fungsi.svg",
+  },
+  {
+    title: "Maklumat Pelayanan",
+    desc: "Maklumat Pelayanan Badan Riset dan Inovasi Daerah Provinsi NTB",
+    link: "/profil",
+    icon: "/icons/tugas-dan-fungsi.svg",
+  },
+];
+---
+
+{
+  menu.map((item) => (
+    <div class="flex flex-col items-center border rounded-md p-5">
+      <div class="w-12 md:w-14 h-12 md:h-14 flex justify-center items-center text-blue-900 mb-2 sm:mb-4">
+        <img src={item.icon} alt="" class="text-blue-900" />
+      </div>
+
+      <h3 class="text-lg md:text-xl font-semibold text-center mb-2">
+        {item.title}
+      </h3>
+      <p class="text-gray-500 text-center mb-2">{item.desc}</p>
+      <a
+        href={item.link}
+        class="text-blue-900 hover:text-blue-600 active:text-blue-700 font-bold transition duration-100"
+      >
+        Selengkapnya
+      </a>
+    </div>
+  ))
+}
