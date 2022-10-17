@@ -2,7 +2,7 @@
 import Layout from "@layouts/Layout.astro";
 import TitlePage from "@components/page-components/profil/title-page.astro";
 import profilPhotos from "@assets/profil.jpeg";
-import menu from "@components/page-components/profil/menu.json";
+import Menu from "@components/page-components/profil/menu.astro";
 ---
 
 <Layout title="Profil BRIDA NTB" menu={2}>
@@ -57,46 +57,11 @@ import menu from "@components/page-components/profil/menu.json";
   </div>
   <div class="bg-white py-6 sm:py-8 lg:py-12">
     <div class="grid sm:grid-cols-2 xl:grid-cols-3 gap-12 xl:gap-16">
-      {
-        menu.map((item) => (
-          <div class="flex flex-col items-center border rounded-md p-5">
-            <div class="w-12 md:w-14 h-12 md:h-14 flex justify-center items-center text-blue-900 mb-2 sm:mb-4">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                class="icon icon-tabler icon-tabler-sitemap"
-                viewBox="0 0 24 24"
-                stroke-width="2"
-                stroke="currentColor"
-                fill="none"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              >
-                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                <rect x="3" y="15" width="6" height="6" rx="2" />
-                <rect x="15" y="15" width="6" height="6" rx="2" />
-                <rect x="9" y="3" width="6" height="6" rx="2" />
-                <path d="M6 15v-1a2 2 0 0 1 2 -2h8a2 2 0 0 1 2 2v1" />
-                <line x1="12" y1="9" x2="12" y2="12" />
-              </svg>
-            </div>
-
-            <h3 class="text-lg md:text-xl font-semibold text-center mb-2">
-              {item.title}
-            </h3>
-            <p class="text-gray-500 text-center mb-2">{item.desc}</p>
-            <a
-              href={item.link}
-              class="text-blue-900 hover:text-blue-600 active:text-blue-700 font-bold transition duration-100"
-            >
-              Selengkapnya
-            </a>
-          </div>
-        ))
-      }
+      <Menu />
     </div>
     <div class="bg-white py-6 sm:py-8 lg:py-12 mt-10">
       <div
-        class="md:h-80 flex flex-col sm:flex-row bg-gray-200 rounded-lg overflow-hidden border"
+        class="md:h-80 flex flex-col sm:flex-row bg-gray-100 rounded-lg overflow-hidden border"
       >
         <div
           class="w-full sm:w-1/2 lg:w-2/5 h-48 sm:h-auto order-first sm:order-none bg-gray-300 relative"
@@ -119,7 +84,7 @@ import menu from "@components/page-components/profil/menu.json";
             Jalan Raya Zamia, No.2 Desa Lelede, Lombok Barat, Nusa Tenggara
             Barat
           </p>
-          <div class="flex gap-4">
+          <div class="flex gap-4 mb-5">
             <a
               href="#"
               target="_blank"
