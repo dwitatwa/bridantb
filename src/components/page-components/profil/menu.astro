@@ -1,79 +1,337 @@
----
-const menu = [
-  {
-    title: "Tugas dan Fungsi Pokok",
-    desc: "Tugas dan Fungsi Pokok Badan Riset dan Inovasi Daerah Provinsi NTB",
-    link: "/profil/tugas-dan-fungsi-pokok",
-    icon: "/icons/tugas-dan-fungsi.svg",
-  },
-  {
-    title: "Profil Kepala Badan",
-    desc: "Profil lengkap Kepala Badan Riset dan Inovasi Daerah Provinsi NTB",
-    link: "/profil",
-    icon: "/icons/tugas-dan-fungsi.svg",
-  },
-  {
-    title: "Profil Sekretaris Badan",
-    desc: "Profil lengkap Sekretaris Badan Riset dan Inovasi Daerah Provinsi NTB",
-    link: "/profil",
-    icon: "/icons/tugas-dan-fungsi.svg",
-  },
-  {
-    title: "Profil Kasubbag Umum",
-    desc: "Profil lengkap Kepala Sub Bagian Umum dan Kepegawaian Badan Riset dan Inovasi Daerah Provinsi NTB",
-    link: "/profil/tugas-dan-fungsi-pokok",
-    icon: "/icons/tugas-dan-fungsi.svg",
-  },
-  {
-    title: "Profil Jabatan Fungsional",
-    desc: "Profil lengkap Pejabat Fungsional Badan Riset dan Inovasi Daerah Provinsi NTB",
-    link: "/profil",
-    icon: "/icons/tugas-dan-fungsi.svg",
-  },
-  {
-    title: "Profil Bidang",
-    desc: "Profil lengkap Bidang - Bidang pada Badan Riset dan Inovasi Daerah Provinsi NTB",
-    link: "/profil",
-    icon: "/icons/tugas-dan-fungsi.svg",
-  },
-  {
-    title: "Struktur Organisasi",
-    desc: "Struktur Organisasi Pengurus Badan Riset dan Inovasi Daerah Provinsi NTB",
-    link: "/profil",
-    icon: "/icons/tugas-dan-fungsi.svg",
-  },
-  {
-    title: "Kalender Kegiatan BRIDA",
-    desc: "Kalender kegiatan Badan Riset dan Inovasi Daerah Provinsi NTB",
-    link: "/profil",
-    icon: "/icons/tugas-dan-fungsi.svg",
-  },
-  {
-    title: "Maklumat Pelayanan",
-    desc: "Maklumat Pelayanan Badan Riset dan Inovasi Daerah Provinsi NTB",
-    link: "/profil",
-    icon: "/icons/tugas-dan-fungsi.svg",
-  },
-];
----
+<div class="flex flex-col items-center border rounded-md p-5">
+  <div
+    class="w-12 md:w-14 h-12 md:h-14 flex justify-center items-center text-blue-900 mb-2 sm:mb-4"
+  >
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      class="icon icon-tabler icon-tabler-clipboard-typography"
+      width="64"
+      height="64"
+      viewBox="0 0 24 24"
+      stroke-width="2"
+      stroke="currentColor"
+      fill="none"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+    >
+      <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+      <path
+        d="M9 5h-2a2 2 0 0 0 -2 2v12a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-12a2 2 0 0 0 -2 -2h-2"
+      ></path>
+      <rect x="9" y="3" width="6" height="4" rx="2"></rect>
+      <path d="M9 12v-1h6v1"></path>
+      <path d="M12 11v6"></path>
+      <path d="M11 17h2"></path>
+    </svg>
+  </div>
 
-{
-  menu.map((item) => (
-    <div class="flex flex-col items-center border rounded-md p-5">
-      <div class="w-12 md:w-14 h-12 md:h-14 flex justify-center items-center text-blue-900 mb-2 sm:mb-4">
-        <img src={item.icon} alt="" class="text-blue-900" />
-      </div>
+  <h3 class="text-lg md:text-xl font-semibold text-center mb-2">
+    Tugas dan Fungsi Pokok
+  </h3>
+  <p class="text-gray-500 text-center mb-2">
+    Tugas dan Fungsi Pokok Badan Riset dan Inovasi Daerah Provinsi NTB
+  </p>
+  <a
+    href="/profil/tugas-dan-fungsi-pokok"
+    class="text-blue-900 hover:text-blue-600 active:text-blue-700 font-bold transition duration-100"
+  >
+    Selengkapnya
+  </a>
+</div><div class="flex flex-col items-center border rounded-md p-5">
+  <div
+    class="w-12 md:w-14 h-12 md:h-14 flex justify-center items-center text-blue-900 mb-2 sm:mb-4"
+  >
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      class="icon icon-tabler icon-tabler-user-circle"
+      width="64"
+      height="64"
+      viewBox="0 0 24 24"
+      stroke-width="2"
+      stroke="currentColor"
+      fill="none"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+    >
+      <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+      <circle cx="12" cy="12" r="9"></circle>
+      <circle cx="12" cy="10" r="3"></circle>
+      <path d="M6.168 18.849a4 4 0 0 1 3.832 -2.849h4a4 4 0 0 1 3.834 2.855"
+      ></path>
+    </svg>
+  </div>
 
-      <h3 class="text-lg md:text-xl font-semibold text-center mb-2">
-        {item.title}
-      </h3>
-      <p class="text-gray-500 text-center mb-2">{item.desc}</p>
-      <a
-        href={item.link}
-        class="text-blue-900 hover:text-blue-600 active:text-blue-700 font-bold transition duration-100"
-      >
-        Selengkapnya
-      </a>
-    </div>
-  ))
-}
+  <h3 class="text-lg md:text-xl font-semibold text-center mb-2">
+    Profil Kepala Badan
+  </h3>
+  <p class="text-gray-500 text-center mb-2">
+    Profil lengkap Kepala Badan Riset dan Inovasi Daerah Provinsi NTB
+  </p>
+  <a
+    href="/profil/kepala-badan"
+    class="text-blue-900 hover:text-blue-600 active:text-blue-700 font-bold transition duration-100"
+  >
+    Selengkapnya
+  </a>
+</div><div class="flex flex-col items-center border rounded-md p-5">
+  <div
+    class="w-12 md:w-14 h-12 md:h-14 flex justify-center items-center text-blue-900 mb-2 sm:mb-4"
+  >
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      class="icon icon-tabler icon-tabler-user-circle"
+      width="64"
+      height="64"
+      viewBox="0 0 24 24"
+      stroke-width="2"
+      stroke="currentColor"
+      fill="none"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+    >
+      <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+      <circle cx="12" cy="12" r="9"></circle>
+      <circle cx="12" cy="10" r="3"></circle>
+      <path d="M6.168 18.849a4 4 0 0 1 3.832 -2.849h4a4 4 0 0 1 3.834 2.855"
+      ></path>
+    </svg>
+  </div>
+
+  <h3 class="text-lg md:text-xl font-semibold text-center mb-2">
+    Profil Sekretaris Badan
+  </h3>
+  <p class="text-gray-500 text-center mb-2">
+    Profil lengkap Sekretaris Badan Riset dan Inovasi Daerah Provinsi NTB
+  </p>
+  <a
+    href="/profil/sekretaris-badan"
+    class="text-blue-900 hover:text-blue-600 active:text-blue-700 font-bold transition duration-100"
+  >
+    Selengkapnya
+  </a>
+</div><div class="flex flex-col items-center border rounded-md p-5">
+  <div
+    class="w-12 md:w-14 h-12 md:h-14 flex justify-center items-center text-blue-900 mb-2 sm:mb-4"
+  >
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      class="icon icon-tabler icon-tabler-user-circle"
+      width="64"
+      height="64"
+      viewBox="0 0 24 24"
+      stroke-width="2"
+      stroke="currentColor"
+      fill="none"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+    >
+      <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+      <circle cx="12" cy="12" r="9"></circle>
+      <circle cx="12" cy="10" r="3"></circle>
+      <path d="M6.168 18.849a4 4 0 0 1 3.832 -2.849h4a4 4 0 0 1 3.834 2.855"
+      ></path>
+    </svg>
+  </div>
+
+  <h3 class="text-lg md:text-xl font-semibold text-center mb-2">
+    Profil Kasubbag Umum
+  </h3>
+  <p class="text-gray-500 text-center mb-2">
+    Profil lengkap Kepala Sub Bagian Umum dan Kepegawaian Badan Riset dan
+    Inovasi Daerah Provinsi NTB
+  </p>
+  <a
+    href="/profil/kasubbag-umum"
+    class="text-blue-900 hover:text-blue-600 active:text-blue-700 font-bold transition duration-100"
+  >
+    Selengkapnya
+  </a>
+</div><div class="flex flex-col items-center border rounded-md p-5">
+  <div
+    class="w-12 md:w-14 h-12 md:h-14 flex justify-center items-center text-blue-900 mb-2 sm:mb-4"
+  >
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      class="icon icon-tabler icon-tabler-user-circle"
+      width="64"
+      height="64"
+      viewBox="0 0 24 24"
+      stroke-width="2"
+      stroke="currentColor"
+      fill="none"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+    >
+      <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+      <circle cx="12" cy="12" r="9"></circle>
+      <circle cx="12" cy="10" r="3"></circle>
+      <path d="M6.168 18.849a4 4 0 0 1 3.832 -2.849h4a4 4 0 0 1 3.834 2.855"
+      ></path>
+    </svg>
+  </div>
+
+  <h3 class="text-lg md:text-xl font-semibold text-center mb-2">
+    Profil Jabatan Fungsional
+  </h3>
+  <p class="text-gray-500 text-center mb-2">
+    Profil lengkap Pejabat Fungsional Badan Riset dan Inovasi Daerah Provinsi
+    NTB
+  </p>
+  <a
+    href="/profil/jabatan-fungsional"
+    class="text-blue-900 hover:text-blue-600 active:text-blue-700 font-bold transition duration-100"
+  >
+    Selengkapnya
+  </a>
+</div><div class="flex flex-col items-center border rounded-md p-5">
+  <div
+    class="w-12 md:w-14 h-12 md:h-14 flex justify-center items-center text-blue-900 mb-2 sm:mb-4"
+  >
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      class="icon icon-tabler icon-tabler-affiliate"
+      width="64"
+      height="64"
+      viewBox="0 0 24 24"
+      stroke-width="2"
+      stroke="currentColor"
+      fill="none"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+    >
+      <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+      <path d="M5.931 6.936l1.275 4.249m5.607 5.609l4.251 1.275"></path>
+      <path d="M11.683 12.317l5.759 -5.759"></path>
+      <circle cx="5.5" cy="5.5" r="1.5"></circle>
+      <circle cx="18.5" cy="5.5" r="1.5"></circle>
+      <circle cx="18.5" cy="18.5" r="1.5"></circle>
+      <circle cx="8.5" cy="15.5" r="4.5"></circle>
+    </svg>
+  </div>
+
+  <h3 class="text-lg md:text-xl font-semibold text-center mb-2">
+    Profil Bidang
+  </h3>
+  <p class="text-gray-500 text-center mb-2">
+    Profil lengkap Bidang - Bidang pada Badan Riset dan Inovasi Daerah Provinsi
+    NTB
+  </p>
+  <a
+    href="/profil/bidang"
+    class="text-blue-900 hover:text-blue-600 active:text-blue-700 font-bold transition duration-100"
+  >
+    Selengkapnya
+  </a>
+</div><div class="flex flex-col items-center border rounded-md p-5">
+  <div
+    class="w-12 md:w-14 h-12 md:h-14 flex justify-center items-center text-blue-900 mb-2 sm:mb-4"
+  >
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      class="icon icon-tabler icon-tabler-subtask"
+      width="64"
+      height="64"
+      viewBox="0 0 24 24"
+      stroke-width="2"
+      stroke="currentColor"
+      fill="none"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+    >
+      <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+      <line x1="6" y1="9" x2="12" y2="9"></line>
+      <line x1="4" y1="5" x2="8" y2="5"></line>
+      <path d="M6 5v11a1 1 0 0 0 1 1h5"></path>
+      <rect x="12" y="7" width="8" height="4" rx="1"></rect>
+      <rect x="12" y="15" width="8" height="4" rx="1"></rect>
+    </svg>
+  </div>
+
+  <h3 class="text-lg md:text-xl font-semibold text-center mb-2">
+    Struktur Organisasi
+  </h3>
+  <p class="text-gray-500 text-center mb-2">
+    Struktur Organisasi Pengurus Badan Riset dan Inovasi Daerah Provinsi NTB
+  </p>
+  <a
+    href="/profil/struktur-organisasi"
+    class="text-blue-900 hover:text-blue-600 active:text-blue-700 font-bold transition duration-100"
+  >
+    Selengkapnya
+  </a>
+</div><div class="flex flex-col items-center border rounded-md p-5">
+  <div
+    class="w-12 md:w-14 h-12 md:h-14 flex justify-center items-center text-blue-900 mb-2 sm:mb-4"
+  >
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      class="icon icon-tabler icon-tabler-calendar-event"
+      width="64"
+      height="64"
+      viewBox="0 0 24 24"
+      stroke-width="2"
+      stroke="currentColor"
+      fill="none"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+    >
+      <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+      <rect x="4" y="5" width="16" height="16" rx="2"></rect>
+      <line x1="16" y1="3" x2="16" y2="7"></line>
+      <line x1="8" y1="3" x2="8" y2="7"></line>
+      <line x1="4" y1="11" x2="20" y2="11"></line>
+      <rect x="8" y="15" width="2" height="2"></rect>
+    </svg>
+  </div>
+
+  <h3 class="text-lg md:text-xl font-semibold text-center mb-2">
+    Kalender Kegiatan BRIDA
+  </h3>
+  <p class="text-gray-500 text-center mb-2">
+    Kalender kegiatan Badan Riset dan Inovasi Daerah Provinsi NTB
+  </p>
+  <a
+    href="/profil/kalender-kegiatan-brida"
+    class="text-blue-900 hover:text-blue-600 active:text-blue-700 font-bold transition duration-100"
+  >
+    Selengkapnya
+  </a>
+</div><div class="flex flex-col items-center border rounded-md p-5">
+  <div
+    class="w-12 md:w-14 h-12 md:h-14 flex justify-center items-center text-blue-900 mb-2 sm:mb-4"
+  >
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      class="icon icon-tabler icon-tabler-file-description"
+      width="64"
+      height="64"
+      viewBox="0 0 24 24"
+      stroke-width="2"
+      stroke="currentColor"
+      fill="none"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+    >
+      <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+      <path d="M14 3v4a1 1 0 0 0 1 1h4"></path>
+      <path
+        d="M17 21h-10a2 2 0 0 1 -2 -2v-14a2 2 0 0 1 2 -2h7l5 5v11a2 2 0 0 1 -2 2z"
+      ></path>
+      <path d="M9 17h6"></path>
+      <path d="M9 13h6"></path>
+    </svg>
+  </div>
+
+  <h3 class="text-lg md:text-xl font-semibold text-center mb-2">
+    Maklumat Pelayanan
+  </h3>
+  <p class="text-gray-500 text-center mb-2">
+    Maklumat Pelayanan Badan Riset dan Inovasi Daerah Provinsi NTB
+  </p>
+  <a
+    href="/profil/maklumat-pelayanan-brida"
+    class="text-blue-900 hover:text-blue-600 active:text-blue-700 font-bold transition duration-100"
+  >
+    Selengkapnya
+  </a>
+</div>

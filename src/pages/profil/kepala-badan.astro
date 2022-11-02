@@ -1,0 +1,205 @@
+---
+import Layout from "@layouts/Layout.astro";
+import TitlePage from "@components/page-components/profil/title-page.astro";
+---
+
+<Layout title="Profil BRIDA NTB" menu={2}>
+  <TitlePage slot="hero" title="Kepala Badan Riset dan Inovasi Daerah NTB" />
+  <div class="bg-white py-6 sm:py-8 lg:py-12 flex flex-col gap-5 items-center">
+    <div class="flex flex-col items-center">
+      <div
+        class="w-32 h-32 md:w-52 md:h-52 bg-slate-200 rounded-full overflow-hidden shadow-lg mb-2 md:mb-4"
+      >
+        <img
+          src="/foto-team/Kaban.jpg"
+          loading="lazy"
+          alt="Photo by Radu Florin"
+          class="w-full h-full object-cover object-center"
+        />
+      </div>
+      <p class="text-blue-500 font-bold text-center md:text-left">
+        Kepala Badan
+      </p>
+      <h1
+        class="text-gray-800 text-2xl sm:text-3xl font-bold text-center md:text-left mb-4 md:mb-6"
+      >
+        Dr. Ir. H. Amry Rakhman, M.Si
+      </h1>
+    </div>
+    <div class="rounded-lg flex flex-col items-center w-full">
+      <h2
+        class="text-gray-800 text-xl sm:text-2xl font-semibold text-left md:text-center mb-2 md:mb-4"
+      >
+        Biodata :
+      </h2>
+      <div
+        class="flex gap-5 justify-between w-full flex-wrap flex-col md:flex-row"
+      >
+        <div
+          class="border p-5 rounded-md flex-1 text-left sm:text-center flex flex-col items-center justify-center"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 576 512"
+            class="w-[40px] h-[40px]"
+            fill="#1e3a8a"
+            ><path
+              d="M0 96l576 0c0-35.3-28.7-64-64-64H64C28.7 32 0 60.7 0 96zm0 32V416c0 35.3 28.7 64 64 64H512c35.3 0 64-28.7 64-64V128H0zM64 405.3c0-29.5 23.9-53.3 53.3-53.3H234.7c29.5 0 53.3 23.9 53.3 53.3c0 5.9-4.8 10.7-10.7 10.7H74.7c-5.9 0-10.7-4.8-10.7-10.7zM176 320c-35.3 0-64-28.7-64-64s28.7-64 64-64s64 28.7 64 64s-28.7 64-64 64zM352 208c0-8.8 7.2-16 16-16H496c8.8 0 16 7.2 16 16s-7.2 16-16 16H368c-8.8 0-16-7.2-16-16zm0 64c0-8.8 7.2-16 16-16H496c8.8 0 16 7.2 16 16s-7.2 16-16 16H368c-8.8 0-16-7.2-16-16zm0 64c0-8.8 7.2-16 16-16H496c8.8 0 16 7.2 16 16s-7.2 16-16 16H368c-8.8 0-16-7.2-16-16z"
+            ></path>
+          </svg>
+          <div class="font-medium">Nomor Induk Pegawai</div>
+          <div class="text-gray-500">196609011990011001</div>
+        </div>
+        <div
+          class="border p-5 rounded-md flex-1 text-left sm:text-center flex flex-col items-center justify-center"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 640 512"
+            class="w-[40px] h-[40px]"
+            fill="#1e3a8a"
+            ><path
+              d="M192 48c0-26.5 21.5-48 48-48H400c26.5 0 48 21.5 48 48V512H368V432c0-26.5-21.5-48-48-48s-48 21.5-48 48v80H192V48zM48 96H160V512H48c-26.5 0-48-21.5-48-48V320H80c8.8 0 16-7.2 16-16s-7.2-16-16-16H0V224H80c8.8 0 16-7.2 16-16s-7.2-16-16-16H0V144c0-26.5 21.5-48 48-48zm544 0c26.5 0 48 21.5 48 48v48H560c-8.8 0-16 7.2-16 16s7.2 16 16 16h80v64H560c-8.8 0-16 7.2-16 16s7.2 16 16 16h80V464c0 26.5-21.5 48-48 48H480V96H592zM312 64c-8.8 0-16 7.2-16 16v24H272c-8.8 0-16 7.2-16 16v16c0 8.8 7.2 16 16 16h24v24c0 8.8 7.2 16 16 16h16c8.8 0 16-7.2 16-16V152h24c8.8 0 16-7.2 16-16V120c0-8.8-7.2-16-16-16H344V80c0-8.8-7.2-16-16-16H312z"
+            ></path>
+          </svg>
+          <div class="font-medium">Tempat, Tanggal Lahir</div>
+          <div class="text-gray-500 text-center">
+            Sebasang Ketanga, 1 September 1966
+          </div>
+        </div>
+        <div
+          class="border p-5 rounded-md flex-1 text-left sm:text-center flex flex-col items-center justify-center"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 640 512"
+            class="w-[40px] h-[40px]"
+            fill="#1e3a8a"
+          >
+            <path
+              d="M176 288c61.9 0 112-50.1 112-112s-50.1-112-112-112S64 114.1 64 176s50.1 112 112 112zM352 176c0 86.3-62.1 158.1-144 173.1V384h32c17.7 0 32 14.3 32 32s-14.3 32-32 32H208v32c0 17.7-14.3 32-32 32s-32-14.3-32-32V448H112c-17.7 0-32-14.3-32-32s14.3-32 32-32h32V349.1C62.1 334.1 0 262.3 0 176C0 78.8 78.8 0 176 0s176 78.8 176 176zM271.9 360.6c19.3-10.1 36.9-23.1 52.1-38.4c20 18.5 46.7 29.8 76.1 29.8c61.9 0 112-50.1 112-112s-50.1-112-112-112c-7.2 0-14.3 .7-21.1 2c-4.9-21.5-13-41.7-24-60.2C369.3 66 384.4 64 400 64c37 0 71.4 11.4 99.8 31l20.6-20.6L487 41c-6.9-6.9-8.9-17.2-5.2-26.2S494.3 0 504 0H616c13.3 0 24 10.7 24 24V136c0 9.7-5.8 18.5-14.8 22.2s-19.3 1.7-26.2-5.2l-33.4-33.4L545 140.2c19.5 28.4 31 62.7 31 99.8c0 97.2-78.8 176-176 176c-50.5 0-96-21.3-128.1-55.4z"
+            ></path>
+          </svg>
+          <div class="font-medium">Jenis Kelamin :</div>
+          <div class="text-gray-500">Laki-Laki</div>
+        </div>
+        <div
+          class="border p-5 rounded-md flex-1 text-left sm:text-center flex flex-col items-center justify-center"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 640 512"
+            class="w-[40px] h-[40px]"
+            fill="#1e3a8a"
+          >
+            <path
+              d="M400 0c5 0 9.8 2.4 12.8 6.4c34.7 46.3 78.1 74.9 133.5 111.5l0 0 0 0c5.2 3.4 10.5 7 16 10.6c28.9 19.2 45.7 51.7 45.7 86.1c0 28.6-11.3 54.5-29.8 73.4H221.8c-18.4-19-29.8-44.9-29.8-73.4c0-34.4 16.7-66.9 45.7-86.1c5.4-3.6 10.8-7.1 16-10.6l0 0 0 0C309.1 81.3 352.5 52.7 387.2 6.4c3-4 7.8-6.4 12.8-6.4zM288 512V440c0-13.3-10.7-24-24-24s-24 10.7-24 24v72H192c-17.7 0-32-14.3-32-32V352c0-17.7 14.3-32 32-32H608c17.7 0 32 14.3 32 32V480c0 17.7-14.3 32-32 32H560V440c0-13.3-10.7-24-24-24s-24 10.7-24 24v72H448V454c0-19-8.4-37-23-49.2L400 384l-25 20.8C360.4 417 352 435 352 454v58H288zM70.4 5.2c5.7-4.3 13.5-4.3 19.2 0l16 12C139.8 42.9 160 83.2 160 126v2H0v-2C0 83.2 20.2 42.9 54.4 17.2l16-12zM0 160H160V296.6c-19.1 11.1-32 31.7-32 55.4V480c0 9.6 2.1 18.6 5.8 26.8c-6.6 3.4-14 5.2-21.8 5.2H48c-26.5 0-48-21.5-48-48V176 160z"
+            ></path>
+          </svg>
+          <div class="font-medium">Agama</div>
+          <div class="text-gray-500">Islam</div>
+        </div>
+        <div
+          class="border p-5 rounded-md flex-1 text-left sm:text-center flex flex-col items-center gap-1 justify-center"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 512 512"
+            class="w-[40px] h-[40px]"
+            fill="#1e3a8a"
+          >
+            <path
+              d="M211 7.3C205 1 196-1.4 187.6 .8s-14.9 8.9-17.1 17.3L154.7 80.6l-62-17.5c-8.4-2.4-17.4 0-23.5 6.1s-8.5 15.1-6.1 23.5l17.5 62L18.1 170.6c-8.4 2.1-15 8.7-17.3 17.1S1 205 7.3 211l46.2 45L7.3 301C1 307-1.4 316 .8 324.4s8.9 14.9 17.3 17.1l62.5 15.8-17.5 62c-2.4 8.4 0 17.4 6.1 23.5s15.1 8.5 23.5 6.1l62-17.5 15.8 62.5c2.1 8.4 8.7 15 17.1 17.3s17.3-.2 23.4-6.4l45-46.2 45 46.2c6.1 6.2 15 8.7 23.4 6.4s14.9-8.9 17.1-17.3l15.8-62.5 62 17.5c8.4 2.4 17.4 0 23.5-6.1s8.5-15.1 6.1-23.5l-17.5-62 62.5-15.8c8.4-2.1 15-8.7 17.3-17.1s-.2-17.3-6.4-23.4l-46.2-45 46.2-45c6.2-6.1 8.7-15 6.4-23.4s-8.9-14.9-17.3-17.1l-62.5-15.8 17.5-62c2.4-8.4 0-17.4-6.1-23.5s-15.1-8.5-23.5-6.1l-62 17.5L341.4 18.1c-2.1-8.4-8.7-15-17.1-17.3S307 1 301 7.3L256 53.5 211 7.3z"
+            ></path>
+          </svg>
+          <div class="font-medium">Pangkat/Golongan</div>
+          <div class="text-gray-500">Pembina Utama Madya (IV/d)</div>
+        </div>
+      </div>
+    </div>
+    <div class="flex gap-5 flex-col md:flex-row">
+      <div class="border p-5 rounded-lg flex-1">
+        <h2
+          class="text-gray-800 text-xl sm:text-2xl font-semibold text-left mb-2 md:mb-4"
+        >
+          Riwayat Jabatan
+        </h2>
+
+        <div class="text-gray-500 sm:text-lg mb-6 md:mb-8 px-[20px]">
+          <ol class="list-decimal">
+            <li>
+              Asisten Perekonomian dan Pembangunan, Sekretariat Daerah Kabupaten
+              Sumbawa Barat
+            </li>
+            <li>
+              Plt. Kepala BAPPEDA & LITBANG Kabupaten Sumbawa Barat (2017 -
+              2018)
+            </li>
+            <li>Kepala Dinas PUPR Kabupaten Sumbawa Barat (2020)</li>
+            <li>Kepala Bappenda Provinsi NTB</li>
+            <li>
+              Staf Ahli Gubernur Bidang Ekonomi, Keuangan, Infrastruktur dan
+              Pembangunan
+            </li>
+          </ol>
+        </div>
+      </div>
+      <div class="border p-5 rounded-lg flex-1">
+        <h2
+          class="text-gray-800 text-xl sm:text-2xl font-semibold text-left mb-2 md:mb-4"
+        >
+          Riwayat Pendidikan
+        </h2>
+
+        <div class="text-gray-500 sm:text-lg mb-6 md:mb-8 px-[20px]">
+          <ol class="list-decimal">
+            <li>SMA Negeri 1 Sumbawa Besar</li>
+            <li>S1 Pembangunan Pertanian Universitas Mataram</li>
+            <li>
+              S2 Ilmu Perencanaan dan Pembangunan Wilayah dan Pedesaan IPB
+            </li>
+            <li>S3 Ekonomi Islam Universitas Airlangga</li>
+          </ol>
+        </div>
+      </div>
+      <div class="border p-5 rounded-lg flex-1">
+        <h2
+          class="text-gray-800 text-xl sm:text-2xl font-semibold text-left mb-2 md:mb-4"
+        >
+          Riwayat Penghargaan
+        </h2>
+
+        <div class="text-gray-500 sm:text-lg mb-6 md:mb-8 px-[20px]">
+          <ol class="list-decimal">
+            <li>Tanda Kehormatan Satyalancana Karya Sayta XX Tahun 2015</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+    <a
+      href="#"
+      class="border px-5 py-3 rounded-lg text-blue-500 flex gap-2"
+      target="_blank"
+    >
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        class="icon icon-tabler icon-tabler-external-link"
+        width="24"
+        height="24"
+        viewBox="0 0 24 24"
+        stroke-width="2"
+        stroke="currentColor"
+        fill="none"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      >
+        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+        <path d="M11 7h-5a2 2 0 0 0 -2 2v9a2 2 0 0 0 2 2h9a2 2 0 0 0 2 -2v-5"
+        ></path>
+        <line x1="10" y1="14" x2="20" y2="4"></line>
+        <polyline points="15 4 20 4 20 9"></polyline>
+      </svg>
+      Informasi LHKPN
+    </a>
+  </div>
+</Layout>
