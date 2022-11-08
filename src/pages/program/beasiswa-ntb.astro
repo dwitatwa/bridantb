@@ -1,17 +1,9 @@
 ---
 import Layout from "../../layouts/Layout.astro";
 import BeritaProgram from "../../components/page-components/program/BeritaProgram";
-
-export async function getStaticPaths() {
-  return [
-    { params: { detail: "beasiswa-ntb" } },
-    { params: { detail: "2" } },
-    { params: { detail: 3 } }, // Can be a number too!
-  ];
-}
 ---
 
-<Layout title="Detail Program BRIDA NTB" menu={2}>
+<Layout title="Detail Program BRIDA NTB" menu={3}>
   <hr />
   <main class="max-w-3xl pt-5 lg:pt-10 xl:pt-10 mx-auto">
     <section
@@ -42,37 +34,35 @@ export async function getStaticPaths() {
         Deskripsi Program
       </h2>
       <p class="text-gray-500 sm:text-lg mb-6 md:mb-8 text-justify">
-        This is a section of some simple filler text, also known as placeholder
-        text. It shares some characteristics of a real written text but is
-        random or otherwise generated. It may be used to display a sample of
-        fonts or generate text for testing. Filler text is dummy text which has
-        no meaning however looks very similar to real text. The important factor
-        when using filler text is that the text looks realistic otherwise it
-        will not look very good.<br /><br />
-
-        This is a section of some simple filler text, also known as placeholder
-        text. It shares some characteristics of a real written text but is <a
-          href="#"
-          class="text-indigo-500 hover:text-indigo-600 active:text-indigo-700 underline transition duration-100"
-          >random</a
-        > or otherwise generated. It may be used to display a sample of fonts or
-        generate text for testing. Filler text is dummy text which has no meaning
-        however looks very similar to real text.
+        Melalui program ini, BRIDA NTB memberikan kesempatan bagi putra putri
+        NTB untuk dapat mengeyam pendidikan lebih tinggi sebagai bentuk
+        Investasi Sumber Daya Manusia untuk NTB di masa depan. Program beasiswa
+        ini tersedia dengan berbagai skema baik untuk tujuan dalam negeri maupun
+        luar negeri. Informasi lengkap mengenai Beasiswa NTB baik dalam negeri
+        maupun luar negeri dapat diakses pada website resmi LPPNTB (<a
+          href="https://lppntb.com/program/beasiswa-ntb"
+          class="text-blue-500">https://lppntb.com</a
+        >) dan Beasiswa NTB (<a
+          href="https://beasiswa.ntbprov.go.id"
+          class="text-blue-500">https://beasiswa.ntbprov.go.id</a
+        >)
       </p>
 
       <h2 class="text-gray-800 text-xl sm:text-2xl font-semibold mb-2 md:mb-4">
-        About us
+        Pelaksanaan Program
       </h2>
 
       <p class="text-gray-500 sm:text-lg mb-6 md:mb-8 text-justify">
-        This is a section of some simple filler text, also known as placeholder
-        text. It shares some characteristics of a real written text but is
-        random or otherwise generated. It may be used to display a sample of
-        fonts or generate text for testing. Filler text is dummy text which has
-        no meaning however looks very similar to real text.
+        Melalui program Beasiswa NTB ini sebanyak <span
+          class="font-bold text-blue-500">730</span
+        > Masyarakat NTB telah dikirim ke Luar Negeri untuk melanjutkan studi, mulai
+        dari jenjang S1,S2, dan S3. Kemudian untuk Dalam Negeri, program Beasiswa
+        NTB telah memberikan bantuan biaya pendidikan kepada <span
+          class="font-bold text-blue-500">3671</span
+        > Masyarakat NTB mulai dari jenjang D1 s/d S3.
       </p>
       <h2 class="text-gray-800 text-xl sm:text-2xl font-semibold mb-2 md:mb-4">
-        Pelaksanaan Program <br />
+        Informasi Pelaksanaan Program <br />
         <span class="text-sm font-normal italic"
           >Geser atau scroll menggunakan mouse untuk berita lainnya</span
         >
