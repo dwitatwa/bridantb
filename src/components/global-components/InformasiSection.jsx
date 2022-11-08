@@ -15,9 +15,9 @@ export default function InformasiSection() {
   return (
     <section className="bg-white py-6 sm:py-8 lg:py-12">
       <div className="mb-10">
-        <div className="flex justify-between items-end gap-4">
-          <h2 className="text-gray-800 text-2xl lg:text-3xl font-bold">
-            Informasi Terbaru
+        <div className="flex justify-between items-end gap-4 items-center">
+          <h2 className="text-gray-800 text-xl lg:text-3xl font-bold">
+            Pelaksanaan Program
           </h2>
           <div className="flex gap-4  justify-center">
             <button

@@ -13,8 +13,8 @@ function BeritaProgram() {
       slidesPerView={2}
       loop={true}
     >
-      {dummyList.map((item) => (
-        <SwiperSlide>
+      {dummyList.map((item, index) => (
+        <SwiperSlide key={index}>
           <a
             href="#"
             className="group h-48 md:h-64 xl:h-96 flex flex-col bg-red-100 rounded-lg shadow-lg overflow-hidden relative"

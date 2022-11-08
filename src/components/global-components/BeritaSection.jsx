@@ -44,7 +44,7 @@ export default function BeritaSection() {
       <div className="mb-10">
         <div className="flex justify-between items-center gap-4">
           <h2 className="text-gray-800 text-2xl lg:text-3xl font-bold">
-            Berita Terbaru
+            Berita dan Kegiatan
           </h2>
 
           <div className="flex gap-4  justify-center">
