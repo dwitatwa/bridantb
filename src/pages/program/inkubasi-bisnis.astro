@@ -1,0 +1,71 @@
+---
+import BeritaProgram from "@components/page-components/program/BeritaProgram";
+import Layout from "../../layouts/Layout.astro";
+---
+
+<Layout title="Detail Program BRIDA NTB" menu={3}>
+  <hr />
+  <main class="max-w-3xl pt-5 lg:pt-10 xl:pt-10 mx-auto">
+    <section
+      class="min-h-20 h-20 mb-10 flex justify-center items-center flex-1 shrink-0 bg-gray-100 overflow-hidden shadow-lg rounded-lg relative py-40 md:py-46 xl:py-40"
+    >
+      <img
+        src="https://images.unsplash.com/photo-1556761175-b413da4baf72?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8aW5jdWJhdG9yfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+        loading="lazy"
+        alt="Landing Foto BRIDA NTB"
+        class="w-full h-full object-cover object-center absolute inset-0"
+      />
+      <div class="bg-blue-500 mix-blend-multiply absolute inset-0"></div>
+      <div class="sm:max-w-5xl flex flex-col items-center relative p-4">
+        <p
+          class="text-white text-xl sm:text-2xl md:text-3xl font-medium text-center"
+        >
+          Program
+        </p>
+        <h1
+          class="text-white text-4xl sm:text-5xl md:text-6xl font-bold text-center"
+        >
+          Inkubasi Bisnis
+        </h1>
+      </div>
+    </section>
+    <div class="bg-white">
+      <h2 class="text-gray-800 text-xl sm:text-2xl font-semibold mb-2 md:mb-4">
+        Deskripsi Program
+      </h2>
+      <p class="text-gray-500 sm:text-lg mb-6 md:mb-8 text-justify">
+        Program Inkubasi Bisnis merupakan program yang memberikan pembinaan
+        kepada IKM/Usaha yang dimiliki oleh masyarakat di daerah Provinsi Nusa
+        Tenggara Barat, sehingga setelah menerima pembinaan, IKM/Usaha tersebut
+        bisa berjalan secara mandiri.
+        <br /><br />
+        Melalui program ini BRIDA NTB memberikan fasilitas berupa tempat, pengurusan
+        surat izin usaha, hingga jaringan pemasaran usaha secara gratis.
+        <br /><br />
+        Masyarakat yang ingin usahanya mendapat bimbingan dari BRIDA NTB, harus mendaftar
+        menjadi tenant BRIDA NTB dan mengikuti seleksi sesuai dengan standar yang
+        sudah ditentukan oleh BRIDA NTB.
+      </p>
+
+      <h2 class="text-gray-800 text-xl sm:text-2xl font-semibold mb-2 md:mb-4">
+        Pelaksanaan Program
+      </h2>
+
+      <p class="text-gray-500 sm:text-lg mb-6 md:mb-8 text-justify">
+        Saat ini terdapat 17 Tenant yang sudah mengikuti pembinaan di BRIDA NTB.
+        Pembinaan ini dilakukan pada waktu yang disesuaikan dengan kebutuhan
+        dari tenant tersebut (Fleksibel). Setiap tenant menandatangi kontrak
+        yang berdurasi selama 3 tahun. Jadi selama 3 tahun, tenant akan tetap
+        mendapatkan bimbingan sampai tenant tersebut merasa sudah bisa
+        menjalankan bisnis secara mandiri.
+      </p>
+      <h2 class="text-gray-800 text-xl sm:text-2xl font-semibold mb-2 md:mb-4">
+        Informasi Pelaksanaan Program <br />
+        <span class="text-sm font-normal italic"
+          >Geser atau scroll menggunakan mouse untuk berita lainnya</span
+        >
+      </h2>
+      <BeritaProgram client:visible />
+    </div>
+  </main>
+</Layout>
