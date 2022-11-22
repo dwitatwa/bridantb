@@ -1,8 +1,9 @@
 import { useState, useEffect } from "react";
-import { createClient } from "contentful";
+// import { createClient } from "contentful";
 
-// import contentful from "contentful";
-// const { createClient } = contentful;
+import contentful from "contentful";
+const { createClient } = contentful;
+
 export default function Program() {
   const [items, setItems] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
