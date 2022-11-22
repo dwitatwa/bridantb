@@ -1,0 +1,110 @@
+---
+import LayoutPPID from "@layouts/LayoutPPID.astro";
+const documents = [
+  {
+    title: "Pengumuman Penting",
+    link: "/ppid/dokumen/pengumuman-penting",
+  },
+  {
+    title: "SK/Penetapan PPID",
+    link: "/ppid/dokumen/sk-penetapan-ppid",
+  },
+  {
+    title: "Informasi Keuangan",
+    link: "https://drive.google.com/drive/folders/1LOmcRhIxpcBxViWfMU7i4SKGPJLKlnAD?usp=sharing",
+  },
+  {
+    title: "Laporan Kinerja",
+    link: "https://drive.google.com/file/d/1wPlF3zM7MZlYzal-ws78PbEKRnLKH9_c/view?usp=share_link",
+  },
+  {
+    title: "Renja & Renstra",
+    link: "/ppid/dokumen/renja-dan-renstra",
+  },
+  {
+    title: "Standar Layanan",
+    link: "/ppid/dokumen/standar-layanan",
+  },
+  {
+    title: "Perjanjian Kinerja",
+    link: "/ppid/dokumen/perjanjian-kerja",
+  },
+  {
+    title: "Laporan Layanan Informasi",
+    link: "/ppid/dokumen/laporan-layanan-informasi-publik",
+  },
+  {
+    title: "Informasi LHKPN",
+    link: "/ppid/dokumen/informasi-lhkpn",
+  },
+  {
+    title: "Anggaran PPID",
+    link: "https://drive.google.com/drive/folders/1uWW0YvWbcviHAVLaNcOlKbFKFynExXwe?usp=share_link",
+  },
+];
+---
+
+<LayoutPPID title="Dokumen | PPID BRIDA NTB" menu={4}>
+  <section
+    class="min-h-20 h-20 mb-10 flex justify-center items-center flex-1 shrink-0 bg-blue-900 overflow-hidden shadow-lg relative py-40 md:py-46 xl:py-44"
+    slot="hero"
+  >
+    <div class="absolute inset-0 w-[1100px] lg:w-full h-full">
+      <!-- <img src={"#"} /> -->
+    </div>
+    <div class="sm:max-w-5xl flex flex-col items-center relative p-4">
+      <h1
+        class="text-white text-4xl sm:text-5xl md:text-6xl font-bold text-center flex items-center gap-5"
+      >
+        Dokumen
+      </h1>
+      <p
+        class="text-white text-xl sm:text-2xl md:text-3xl font-medium text-center relative top-5"
+      >
+        PPID BRIDA Provinsi NTB
+      </p>
+    </div>
+  </section>
+  <section class="bg-white py-6 sm:py-8 lg:py-12">
+    <div
+      class="grid sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-5 gap-8 md:gap-10 xl:gap-10"
+    >
+      {
+        documents.map((item) => (
+          <div class="flex flex-col border rounded-lg p-4 md:p-6">
+            <div class="flex gap-4 md:gap-6 justify-center">
+              <div class="flex items-center flex-col">
+                <h3 class="text-lg md:text-xl font-semibold mb-2 text-slate-600 flex flex-col items-center gap-3 text-center">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                    class="w-10 sm:w-12 md:w-16 lg:w-16 xl:w-16"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M7.502 6h7.128A3.375 3.375 0 0118 9.375v9.375a3 3 0 003-3V6.108c0-1.505-1.125-2.811-2.664-2.94a48.972 48.972 0 00-.673-.05A3 3 0 0015 1.5h-1.5a3 3 0 00-2.663 1.618c-.225.015-.45.032-.673.05C8.662 3.295 7.554 4.542 7.502 6zM13.5 3A1.5 1.5 0 0012 4.5h4.5A1.5 1.5 0 0015 3h-1.5z"
+                      clip-rule="evenodd"
+                    />
+                    <path
+                      fill-rule="evenodd"
+                      d="M3 9.375C3 8.339 3.84 7.5 4.875 7.5h9.75c1.036 0 1.875.84 1.875 1.875v11.25c0 1.035-.84 1.875-1.875 1.875h-9.75A1.875 1.875 0 013 20.625V9.375zM6 12a.75.75 0 01.75-.75h.008a.75.75 0 01.75.75v.008a.75.75 0 01-.75.75H6.75a.75.75 0 01-.75-.75V12zm2.25 0a.75.75 0 01.75-.75h3.75a.75.75 0 010 1.5H9a.75.75 0 01-.75-.75zM6 15a.75.75 0 01.75-.75h.008a.75.75 0 01.75.75v.008a.75.75 0 01-.75.75H6.75a.75.75 0 01-.75-.75V15zm2.25 0a.75.75 0 01.75-.75h3.75a.75.75 0 010 1.5H9a.75.75 0 01-.75-.75zM6 18a.75.75 0 01.75-.75h.008a.75.75 0 01.75.75v.008a.75.75 0 01-.75.75H6.75a.75.75 0 01-.75-.75V18zm2.25 0a.75.75 0 01.75-.75h3.75a.75.75 0 010 1.5H9a.75.75 0 01-.75-.75z"
+                      clip-rule="evenodd"
+                    />
+                  </svg>
+                  {item.title}
+                </h3>
+                <a
+                  href={item.link}
+                  class="text-blue-900 hover:text-blue-600 active:text-blue-700 font-bold transition duration-100"
+                >
+                  Lihat Dokumen
+                </a>
+              </div>
+            </div>
+          </div>
+        ))
+      }
+    </div>
+  </section>
+</LayoutPPID>

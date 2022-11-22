@@ -1,0 +1,190 @@
+---
+import LayoutPPID from "@layouts/LayoutPPID.astro";
+---
+
+<LayoutPPID title="Dokumen | PPID BRIDA NTB" menu={5}>
+  <section
+    class="min-h-20 h-20 mb-10 flex justify-center items-center flex-1 shrink-0 bg-blue-900 overflow-hidden shadow-lg relative py-40 md:py-46 xl:py-44"
+    slot="hero"
+  >
+    <div class="absolute inset-0 w-[1100px] lg:w-full h-full">
+      <!-- <img src={"#"} /> -->
+    </div>
+    <div class="sm:max-w-5xl flex flex-col items-center relative p-4">
+      <h1
+        class="text-white text-4xl sm:text-5xl md:text-6xl font-bold text-center flex items-center gap-5"
+      >
+        Prosedur PPID
+      </h1>
+      <p
+        class="text-white text-xl sm:text-2xl md:text-3xl font-medium text-center relative top-5"
+      >
+        PPID BRIDA Provinsi NTB
+      </p>
+    </div>
+  </section>
+  <section class="bg-white">
+    <div class="bg-white py-6 sm:py-8 lg:py-12">
+      <div
+        class="flex flex-col sm:flex-row bg-gray-100 rounded-lg border overflow-hidden"
+      >
+        <div
+          class="w-full sm:w-1/2 lg:w-2/5 h-48 sm:h-auto order-first sm:order-none bg-gray-300 relative"
+        >
+          <div class="bg-slate-900 w-full h-full absolute opacity-[70%]"></div>
+          <img
+            src="https://images.unsplash.com/photo-1556745753-b2904692b3cd?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8c2VydmljZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
+            loading="lazy"
+            alt="Photo by Andras Vas"
+            class="w-full h-full object-cover object-center"
+          />
+        </div>
+        <div
+          class="w-full sm:w-1/2 lg:w-3/5 flex flex-col p-4 sm:p-8"
+          id="tugas-dan-fungsi"
+        >
+          <h2
+            class="text-gray-800 text-xl md:text-2xl lg:text-4xl font-bold mb-4"
+          >
+            Mekanisme Permohonan Informasi Publik
+          </h2>
+
+          <p class="text-gray-600 mb-8">
+            Kewajiban Badan Riset dan Inovasi Daerah Provinsi NTB adalah
+            memberikan pelayanan informasi kepada pemohon informasi Publik
+            secara cepat, tepat waktu, biaya proporsional dan cara yang mudah.
+            Untuk dapat memperoleh salinan informasi yang Anda butuhkan, Anda
+            dapat mengisi formulir yang ada dan mengikuti tata cara untuk
+            memperoleh informasi publik dengan standar biaya layanan informasi
+            yang berlaku.
+          </p>
+          <div class="text-blue-500 mb-8 flex flex-col gap-3">
+            <div class="flex items-center gap-2">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 512 512"
+                width="14px"
+                height="14px"
+                fill="currentColor"
+              >
+                <path
+                  d="M320 0c-17.7 0-32 14.3-32 32s14.3 32 32 32h82.7L201.4 265.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L448 109.3V192c0 17.7 14.3 32 32 32s32-14.3 32-32V32c0-17.7-14.3-32-32-32H320zM80 32C35.8 32 0 67.8 0 112V432c0 44.2 35.8 80 80 80H400c44.2 0 80-35.8 80-80V320c0-17.7-14.3-32-32-32s-32 14.3-32 32V432c0 8.8-7.2 16-16 16H80c-8.8 0-16-7.2-16-16V112c0-8.8 7.2-16 16-16H192c17.7 0 32-14.3 32-32s-14.3-32-32-32H80z"
+                ></path>
+              </svg>
+              <a
+                href="https://forms.gle/Hys3uDhYvUsXM2uD9"
+                class="text-blue-500 font-medium hover:underline"
+                >Form Layanan Informasi Publik</a
+              >
+            </div>
+            <div class="flex items-center gap-2">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 512 512"
+                width="14px"
+                height="14px"
+                fill="currentColor"
+              >
+                <path
+                  d="M320 0c-17.7 0-32 14.3-32 32s14.3 32 32 32h82.7L201.4 265.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L448 109.3V192c0 17.7 14.3 32 32 32s32-14.3 32-32V32c0-17.7-14.3-32-32-32H320zM80 32C35.8 32 0 67.8 0 112V432c0 44.2 35.8 80 80 80H400c44.2 0 80-35.8 80-80V320c0-17.7-14.3-32-32-32s-32 14.3-32 32V432c0 8.8-7.2 16-16 16H80c-8.8 0-16-7.2-16-16V112c0-8.8 7.2-16 16-16H192c17.7 0 32-14.3 32-32s-14.3-32-32-32H80z"
+                ></path>
+              </svg>
+              <a
+                href="https://drive.google.com/file/d/1BZQ2XaC9Zz-J9c4EKHEuGEcTUo_I103T/view?usp=share_link"
+                class="text-blue-500 font-medium hover:underline"
+                >Standar Biaya Layanan Informasi</a
+              >
+            </div>
+          </div>
+          <a
+            href="/ppid/prosedur/mekanisme-permohonan-informasi-publik"
+            class="text-blue-900 font-bold hover:underline"
+            >Selengkapnya
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <div class="bg-white" id="other-menu">
+    <div class="grid grid-cols-1 md:grid-cols-3 rounded-lg gap-4 lg:gap-6">
+      <div
+        class="flex flex-col sm:flex-row justify-between items-start bg-gray-100 rounded-lg gap-4 p-4 md:p-8"
+      >
+        <div>
+          <h2
+            class="text-blue-900 text-xl md:text-2xl font-bold text-left sm:text-left"
+          >
+            Pengajuan Keberatan Layanan Informasi Publik
+          </h2>
+          <p class="my-2">
+            Informasi lengkap mengenai prosedur dan tata cara pengajuan
+            keberatan layanan informasi publik
+          </p>
+          <div class="flex items-center gap-2 text-blue-500 my-2 text-sm">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 512 512"
+              width="14px"
+              height="14px"
+              fill="currentColor"
+            >
+              <path
+                d="M320 0c-17.7 0-32 14.3-32 32s14.3 32 32 32h82.7L201.4 265.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L448 109.3V192c0 17.7 14.3 32 32 32s32-14.3 32-32V32c0-17.7-14.3-32-32-32H320zM80 32C35.8 32 0 67.8 0 112V432c0 44.2 35.8 80 80 80H400c44.2 0 80-35.8 80-80V320c0-17.7-14.3-32-32-32s-32 14.3-32 32V432c0 8.8-7.2 16-16 16H80c-8.8 0-16-7.2-16-16V112c0-8.8 7.2-16 16-16H192c17.7 0 32-14.3 32-32s-14.3-32-32-32H80z"
+              ></path>
+            </svg>
+            <a
+              href="https://docs.google.com/forms/d/e/1FAIpQLScbGAF9DMwCPhwJsuk6yl-mSneQE_E3cRm0ebH3tGsYH0Fqig/viewform"
+              class="text-blue-500 font-medium hover:underline"
+              >Form Pengajuan Keberatan
+            </a>
+          </div>
+          <a
+            href="/ppid/prosedur/pengajuan-keberatan-layanan-informasi-publik"
+            class="text-blue-900 font-bold hover:underline"
+            >Selengkapnya
+          </a>
+        </div>
+      </div>
+      <div
+        class="flex flex-col sm:flex-row justify-between items-start bg-gray-100 rounded-lg gap-4 p-4 md:p-8"
+      >
+        <div>
+          <h2
+            class="text-blue-900 text-xl md:text-2xl font-bold text-left sm:text-left"
+          >
+            Penyelesaian Sengketa
+          </h2>
+          <div class="flex items-center gap-2 my-2">
+            Informasi lengkap mengenai prosedur dan tata cara penyelesaian
+            sengketa di BRIDA NTB
+          </div>
+          <a
+            href="/ppid/prosedur/penyelesaian-sengketa"
+            class="text-blue-900 font-bold hover:underline"
+            >Selengkapnya
+          </a>
+        </div>
+      </div>
+      <div
+        class="flex flex-col sm:flex-row justify-between items-start bg-gray-100 rounded-lg gap-4 p-4 md:p-8"
+      >
+        <div>
+          <h2
+            class="text-blue-900 text-xl md:text-2xl font-bold text-left sm:text-left"
+          >
+            Peraturan Keterbukaan Informasi Publik
+          </h2>
+          <div class="flex items-center gap-2 my-2">
+            Informasi lengkap mengenai peraturan keterbukaan informasi publik di
+            BRIDA NTB
+          </div>
+          <a
+            href="/ppid/prosedur/peraturan-keterbukaan-informasi-publik"
+            class="text-blue-900 font-bold hover:underline"
+            >Selengkapnya
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</LayoutPPID>

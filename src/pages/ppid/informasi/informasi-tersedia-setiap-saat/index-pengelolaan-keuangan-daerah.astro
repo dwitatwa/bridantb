@@ -1,0 +1,142 @@
+---
+import LayoutPPID from "@layouts/LayoutPPID.astro";
+
+const items = [
+  {
+    namaInformasi:
+      "Koordinasi Perangkat Daerah Terkait Pengisian Indeks Pengelolaan Keuangan Daerah",
+    jenisInformasi: "Berita",
+    link: "https://www.instagram.com/p/CedMSbfBjHw/",
+  },
+  {
+    namaInformasi:
+      "Rapat Koordinasi Terbatas Dengan Beberapa Perangkat Daerah Terkait Pengukuran IPKD",
+    jenisInformasi: "Berita",
+    link: "https://www.instagram.com/p/Ce0ZBGWhxTr/?utm_source=ig_web_copy_link",
+  },
+  {
+    namaInformasi:
+      "NTB Siap! Berupaya Mencapai Predikat Terbaik dengan Memenuhi 6 dimensi IPKD",
+    jenisInformasi: "Berita",
+    link: "https://brida.ntbprov.go.id/berita/ntb-siap-berupaya-mencapai-predikat-terbaik-dengan-memenuhi-6-dimensi-ipkd",
+  },
+  {
+    namaInformasi: "Time Scehdule IPKD",
+    jenisInformasi: "Dokumen",
+    link: "https://brida.ntbprov.go.id/documents/ppid/TIME_SECHEDULE_IPKD_Th.2022__.pdf",
+  },
+  {
+    namaInformasi: "Progres IPKD Kabupaten/Kota (28 Juni 2022)",
+    jenisInformasi: "Dokumen",
+    link: "https://brida.ntbprov.go.id/documents/ppid/PROGRESS%20IPKD%20KABUPATEN%20KOTA%20NTB%2028%20JUNI%202022.pdf",
+  },
+  {
+    namaInformasi: "Progres IPKD Kabupaten/Kota (12 Juli 2022)",
+    jenisInformasi: "Dokumen",
+    link: "https://drive.google.com/file/d/1M_QrWKjfBHTistPSi5KWIE4r1CAtZvHk/view?usp=sharing",
+  },
+  {
+    namaInformasi: "Progres IPKD Kabupaten/Kota (25 Juli 2022)",
+    jenisInformasi: "Dokumen",
+    link: "https://drive.google.com/drive/folders/1RdbN6HEl6JQnU63voB9xQOt2xILXKll3?usp=sharing",
+  },
+  {
+    namaInformasi: "Progres IPKD Provinsi NTB (2 Agustus 2022)",
+    jenisInformasi: "Dokumen",
+    link: "https://drive.google.com/file/d/1vy7XFPmF426uZZfXcw0XrOywNdpn74gF/view?usp=sharing",
+  },
+  {
+    namaInformasi: "Progres IPKD Provinsi NTB (11 Agustus 2022)",
+    jenisInformasi: "Dokumen",
+    link: "https://drive.google.com/file/d/1JkwkhX4jQHidKO7nIg4brWR-6I5X0NE4/view?usp=sharing",
+  },
+  {
+    namaInformasi: "Progres IPKD Provinsi NTB (1 September 2022)",
+    jenisInformasi: "Dokumen",
+    link: "https://drive.google.com/file/d/1eBM5_vhoxrUhlEx3H-zlRK2i9BaiBgSB/view?usp=sharing",
+  },
+  {
+    namaInformasi: "Progres IPKD Provinsi NTB (9 September 2022)",
+    jenisInformasi: "Dokumen",
+    link: "https://drive.google.com/drive/folders/1-gjLKipZyGc22dQLQHHISfZb0xyRVYJt?usp=sharing",
+  },
+];
+---
+
+<LayoutPPID title="IPKD | PPID BRIDA NTB" menu={3}>
+  <section
+    class="min-h-20 h-20 mb-10 flex justify-center items-center flex-1 shrink-0 bg-blue-900 overflow-hidden shadow-lg relative py-40 md:py-46 xl:py-44"
+    slot="hero"
+  >
+    <div class="sm:max-w-5xl flex flex-col items-center relative p-4">
+      <h1
+        class="text-white text-4xl sm:text-5xl md:text-6xl font-bold text-center flex items-center gap-5"
+      >
+        Pengelolaan Keuangan Daerah
+      </h1>
+      <p
+        class="text-white text-xl sm:text-2xl md:text-3xl font-medium text-center relative top-5"
+      >
+        PPID BRIDA Provinsi NTB
+      </p>
+    </div>
+  </section>
+
+  <section class="antialiased bg-white border" x-data="app">
+    <div class="flex flex-col justify-center">
+      <header
+        class="px-5 py-4 border-b border-gray-100 flex justify-between items-center flex-col sm:flex-row gap-2"
+      >
+        <div class="font-semibold text-gray-800">
+          Informasi Index Pengelolaan Keuangan Daerah
+        </div>
+        <div class="text-gray-500 text-xs font-bold">
+          &#9432; Tabel ini bisa di scroll
+        </div>
+      </header>
+
+      <div class="overflow-x-auto p-3">
+        <table class="table-auto w-full">
+          <thead
+            class="text-xs font-semibold uppercase text-gray-400 bg-gray-50"
+          >
+            <tr>
+              <th class="p-2 w-10">
+                <div class="font-semibold text-left">No.</div>
+              </th>
+              <th class="p-2">
+                <div class="font-semibold text-left">Nama Informasi</div>
+              </th>
+              <th class="p-2">
+                <div class="font-semibold text-center">Link</div>
+              </th>
+            </tr>
+          </thead>
+
+          <tbody class="text-sm divide-y divide-gray-100">
+            {
+              items.map((item: any, index: number) => (
+                <tr>
+                  <td class="text-center">{index + 1}.</td>
+                  <td class="p-2">
+                    <div class="font-medium text-gray-800">
+                      {item.namaInformasi}
+                    </div>
+                  </td>
+                  <td class="text-center">
+                    <a
+                      href={item.link}
+                      class="text-blue-500 font-bold underline"
+                    >
+                      Lihat
+                    </a>
+                  </td>
+                </tr>
+              ))
+            }
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+</LayoutPPID>

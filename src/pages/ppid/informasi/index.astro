@@ -1,0 +1,147 @@
+---
+import LayoutPPID from "@layouts/LayoutPPID.astro";
+---
+
+<LayoutPPID title="Informasi | PPID BRIDA NTB" menu={3}>
+  <section
+    class="min-h-20 h-20 mb-10 flex justify-center items-center flex-1 shrink-0 bg-blue-900 overflow-hidden shadow-lg relative py-40 md:py-46 xl:py-44"
+    slot="hero"
+  >
+    <div class="absolute inset-0 w-[1100px] lg:w-full h-full">
+      <!-- <img src={"#"} /> -->
+    </div>
+    <div class="sm:max-w-5xl flex flex-col items-center relative p-4">
+      <h1
+        class="text-white text-4xl sm:text-5xl md:text-6xl font-bold text-center flex items-center gap-5"
+      >
+        Jenis Informasi
+      </h1>
+      <p
+        class="text-white text-xl sm:text-2xl md:text-3xl font-medium text-center relative top-5"
+      >
+        PPID BRIDA Provinsi NTB
+      </p>
+    </div>
+  </section>
+  <section class="bg-white py-6 sm:py-8 lg:py-12">
+    <div class="mb-10 md:mb-10">
+      <h2
+        class="text-gray-800 text-2xl lg:text-3xl font-bold text-center mb-4 md:mb-6"
+      >
+        Jenis Informasi
+      </h2>
+
+      <p
+        class="max-w-screen-md text-gray-500 md:text-lg md:text-center mx-auto text-justify"
+      >
+        Jenis informasi yang disajikan oleh PPID BRIDA NTB terbagi menjadi 3
+        jenis, yaitu :
+      </p>
+    </div>
+
+    <div class="grid sm:grid-cols-2 xl:grid-cols-3 gap-8 md:gap-10 xl:gap-10">
+      <div class="flex flex-col border rounded-lg p-4 md:p-6">
+        <div class="flex gap-4 md:gap-6">
+          <div>
+            <h3 class="text-lg md:text-xl font-semibold mb-2">
+              Informasi Berkala
+            </h3>
+            <p class="text-gray-500 mb-2">
+              Informasi yang wajib diperbaharui kemudian disediakan dan
+              diumumkan kepada publik secara rutin atau berkala
+              sekurang-kurangnya setiap 6 bulan sekali.
+            </p>
+            <a
+              href="/ppid/informasi/informasi-berkala"
+              class="text-blue-900 hover:text-blue-600 active:text-blue-700 font-bold transition duration-100"
+              >List Informasi Berkala</a
+            >
+          </div>
+        </div>
+      </div>
+      <div class="flex flex-col border rounded-lg p-4 md:p-6">
+        <div class="flex gap-4 md:gap-6">
+          <div>
+            <h3 class="text-lg md:text-xl font-semibold mb-2">
+              Informasi Serta Merta
+            </h3>
+            <p class="text-gray-500 mb-2">
+              Informasi yang berkaitan dengan hajat hidup orang banyak dan
+              ketertiban umum dan wajib diumumkan secara serta merta tanpa
+              penundaan.
+            </p>
+            <a
+              href="/ppid/informasi/informasi-serta-merta"
+              class="text-blue-900 hover:text-blue-600 active:text-blue-700 font-bold transition duration-100"
+              >List Informasi Serta Merta</a
+            >
+          </div>
+        </div>
+      </div>
+      <div class="flex flex-col border rounded-lg p-4 md:p-6">
+        <div class="flex gap-4 md:gap-6">
+          <div>
+            <h3 class="text-lg md:text-xl font-semibold mb-2">
+              Informasi Tersedia Setiap Saat
+            </h3>
+            <p class="text-gray-500 mb-2">
+              Informasi yang harus disediakan oleh Badan Publik dan siap
+              tersedia untuk bisa langsung diberikan kepada Pemohon Informasi
+              Publik ketika terdapat permohonan terhadap Informasi Publik
+              tersebut.
+            </p>
+            <a
+              href="/ppid/informasi/informasi-tersedia-setiap-saat"
+              class="text-blue-900 hover:text-blue-600 active:text-blue-700 font-bold transition duration-100"
+              >List Informasi Tersedia Setiap Saat</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <div class="bg-white my-10" id="other-menu">
+    <div class="grid grid-cols-1 md:grid-cols-2 rounded-lg gap-4 lg:gap-6">
+      <div
+        class="flex flex-col sm:flex-row justify-between items-center bg-gray-100 rounded-lg gap-4 p-4 md:p-8"
+      >
+        <div>
+          <h2
+            class="text-blue-900 text-xl md:text-2xl font-bold text-center sm:text-left"
+          >
+            Daftar Informasi Publik
+          </h2>
+          <p class="text-gray-600 text-center sm:text-left">
+            Struktur lengkap mengenai PPID BRIDA NTB
+          </p>
+        </div>
+
+        <a
+          href="/ppid/informasi/daftar-informasi-publik"
+          class="inline-block bg-blue-900 hover:bg-blue-600 active:bg-blue-700 focus-visible:ring ring-blue-300 text-white text-sm md:text-base font-semibold text-center rounded-lg outline-none transition duration-100 px-8 py-3"
+          >Lihat</a
+        >
+      </div>
+      <div
+        class="flex flex-col sm:flex-row justify-between items-center bg-gray-100 rounded-lg gap-4 p-4 md:p-8"
+      >
+        <div>
+          <h2
+            class="text-blue-900 text-xl md:text-2xl font-bold text-center sm:text-left"
+          >
+            Informasi Agenda Kepala Badan
+          </h2>
+          <p class="text-gray-600 text-center sm:text-left">
+            Daftar lengkap layanan informasi publik oleh PPID BRIDA NTB
+          </p>
+        </div>
+
+        <a
+          href="/ppid/informasi/agenda-harian-kepala-badan"
+          class="inline-block bg-blue-900 hover:bg-blue-600 active:bg-blue-700 focus-visible:ring ring-blue-300 text-white text-sm md:text-base font-semibold text-center rounded-lg outline-none transition duration-100 px-8 py-3"
+          >Lihat</a
+        >
+      </div>
+    </div>
+  </div>
+</LayoutPPID>

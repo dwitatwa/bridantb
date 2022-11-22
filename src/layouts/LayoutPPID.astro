@@ -1,6 +1,6 @@
 ---
-import Footer from "../components/global-components/Footer.astro";
-import Header from "../components/global-components/Header";
+import Footer from "@components/global-components/Footer.astro";
+import HeaderPPID from "@components/page-components/ppid/HeaderPPID";
 
 export interface Props {
   title: string;
@@ -27,7 +27,7 @@ const { title, menu, theClass } = Astro.props;
   <body>
     <div class="bg-white">
       <div class="max-w-screen-2xl px-4 md:px-8 mx-auto">
-        <Header index={menu} client:load />
+        <HeaderPPID index={menu} client:load />
       </div>
     </div>
     <slot name="hero" />
