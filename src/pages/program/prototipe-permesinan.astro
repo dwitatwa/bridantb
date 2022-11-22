@@ -1,0 +1,69 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import BeritaProgram from "@components/page-components/program/BeritaProgram";
+---
+
+<Layout title="Detail Program BRIDA NTB" menu={3}>
+  <hr />
+  <main class="max-w-3xl pt-5 lg:pt-10 xl:pt-10 mx-auto">
+    <section
+      class="min-h-20 h-20 mb-10 flex justify-center items-center flex-1 shrink-0 bg-gray-100 overflow-hidden shadow-lg rounded-lg relative py-40 md:py-46 xl:py-40"
+    >
+      <img
+        src="https://images.unsplash.com/photo-1585980243496-fe29a36bd382?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8c2Nob29sJTIwdHJpcHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=800&q=60"
+        loading="lazy"
+        alt="Landing Foto BRIDA NTB"
+        class="w-full h-full object-cover object-center absolute inset-0"
+      />
+      <div class="bg-blue-500 mix-blend-multiply absolute inset-0"></div>
+      <div class="sm:max-w-5xl flex flex-col items-center relative p-4">
+        <p
+          class="text-white text-xl sm:text-2xl md:text-3xl font-medium text-center"
+        >
+          Program
+        </p>
+        <h1
+          class="text-white text-4xl sm:text-5xl md:text-6xl font-bold text-center"
+        >
+          Prototipe Permesinan
+        </h1>
+      </div>
+    </section>
+    <div class="bg-white">
+      <h2 class="text-gray-800 text-xl sm:text-2xl font-semibold mb-2 md:mb-4">
+        Deskripsi Program
+      </h2>
+      <p class="text-gray-500 sm:text-lg mb-6 md:mb-8 text-justify">
+        Program Inovasi Prototype merupakan program permodelan mesin dimana
+        prototype yang dihasilkan adalah hasil riset / kajian yang terlaksana.
+        Nantinya mesin prototype yang dihasilkan akan menjadi Inovasi dari BRIDA
+        NTB.
+      </p>
+
+      <p class="text-gray-500 sm:text-lg mb-6 md:mb-8 text-justify">
+        Dalam Program ini, dilakukan sosialisasi dan identifikasi prototype
+        permesinan yang dibutuhkan Masyarakat, nantinya prototype permesinan
+        akan diusulkan dalam penganggaran daerah sesuai kebutuhan dan hasil
+        rekomendasi riset yang dilaksanakan
+      </p>
+
+      <h2 class="text-gray-800 text-xl sm:text-2xl font-semibold mb-2 md:mb-4">
+        Pelaksanaan Program
+      </h2>
+
+      <p class="text-gray-500 sm:text-lg mb-6 md:mb-8 text-justify">
+        Tahun 2022 pembuatan mesin prototype yang merupakan inovasi BRIDA akan
+        dibuat sejumlah 13 prortotype yang nantinya bisa dijadikan acuan bagi
+        masyarakat luas Pelaksanaan pembuatan prototype berjalan sampai dengan
+        saat ini telah mencapai 50%.
+      </p>
+      <!-- <h2 class="text-gray-800 text-xl sm:text-2xl font-semibold mb-2 md:mb-4">
+        Informasi Pelaksanaan Program <br />
+        <span class="text-sm font-normal italic"
+          >Geser atau scroll menggunakan mouse untuk berita lainnya</span
+        >
+      </h2> -->
+      <!-- <BeritaProgram client:visible /> -->
+    </div>
+  </main>
+</Layout>
