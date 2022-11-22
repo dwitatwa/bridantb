@@ -12,6 +12,7 @@ export default function Reels() {
     )
       .then((res) => res.json())
       .catch((e) => console.error(e));
+    console.log(response);
     setItems(response.data.filter((item: any) => item.media_type === "VIDEO"));
     setIsLoading(false);
   };
