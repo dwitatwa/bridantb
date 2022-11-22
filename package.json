@@ -10,8 +10,9 @@
     "astro": "astro"
   },
   "dependencies": {
+    "@astrojs/node": "^3.1.0",
     "@contentful/rich-text-react-renderer": "^15.12.1",
-    "astro": "^1.1.5",
+    "astro": "^1.6.10",
     "contentful": "^9.2.5",
     "swiper": "^8.3.2"
   },
