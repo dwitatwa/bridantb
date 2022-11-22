@@ -5,17 +5,15 @@
   "private": true,
   "scripts": {
     "dev": "astro dev",
-    "start": "node dev",
+    "start": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
     "astro": "astro"
   },
   "dependencies": {
-    "@astrojs/node": "^3.1.0",
     "@contentful/rich-text-react-renderer": "^15.12.1",
     "astro": "^1.6.10",
     "contentful": "^9.2.5",
-    "express": "^4.18.2",
     "swiper": "^8.3.2"
   },
   "devDependencies": {
