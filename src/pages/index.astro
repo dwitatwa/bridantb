@@ -2,17 +2,17 @@
 import Layout from "../layouts/Layout.astro";
 import HeroSection from "../components/page-components/landing/HeroSection.astro";
 import ProgramSection from "../components/page-components/landing/ProgramSection.astro";
-import InformasiSection from "../components/global-components/InformasiSection.jsx";
-import BeritaSection from "../components/global-components/BeritaSection.jsx";
 import TeamSection from "../components/page-components/landing/TeamSection.astro";
+import Berita from "@components/page-components/informasi/berita-dan-kegiatan/Berita";
+import Program from "@components/page-components/informasi/pelaksanaan-program/Program";
 ---
 
 <Layout title="BRIDA NTB" menu={1}>
-  <HeroSection slot="hero"/>
+  <HeroSection slot="hero" />
   <main>
     <ProgramSection />
-    <InformasiSection client:load />
-    <BeritaSection client:load/>
+    <Program client:load />
+    <Berita client:load />
     <TeamSection />
   </main>
 </Layout>

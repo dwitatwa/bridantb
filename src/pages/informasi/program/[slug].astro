@@ -1,0 +1,105 @@
+---
+import RichTextToComp from "@components/global-components/RichTextToComp";
+import Layout from "@layouts/Layout.astro";
+// import { createClient } from "contentful";
+
+import content from "contentful";
+
+export const getStaticPaths = async () => {
+  const res: any = await content
+    .createClient({
+      space: "yhv40pnlg70o",
+      accessToken: "ho3n-fblnmKTj8z8e61eQ6L1L4ORhzKKo-S5IuXKvVk",
+    })
+    .getEntries({
+      content_type: "pelaksanaanProgram",
+    });
+
+  const paths = res.items.map((item: { fields: { slug: any } }) => {
+    return {
+      params: { slug: item.fields.slug },
+    };
+  });
+
+  return paths;
+};
+
+const { slug } = Astro.params;
+const items: { items: any } = await content
+  .createClient({
+    space: "yhv40pnlg70o",
+    accessToken: "ho3n-fblnmKTj8z8e61eQ6L1L4ORhzKKo-S5IuXKvVk",
+  })
+  .getEntries({
+    content_type: "pelaksanaanProgram",
+    "fields.slug": slug,
+  });
+
+const theDay = [
+  "Minggu",
+  "Senin",
+  "Selasa",
+  "Rabu",
+  "Kamis",
+  "Jum'at",
+  "Sabtu",
+];
+---
+
+<Layout title="Detail Program BRIDA NTB" menu={4}>
+  <hr />
+  <main class="max-w-3xl pt-5 lg:pt-10 xl:pt-10 mx-auto">
+    <section
+      class="min-h-20 h-[350px] sm:h-[450px] flex justify-center items-center bg-gray-100 overflow-hidden shadow-lg rounded-lg relative md:py-46 xl:py-40"
+    >
+      <img
+        src={`https:${items.items[0].fields.cover.fields.file.url}`}
+        loading="lazy"
+        alt="Landing Foto BRIDA NTB"
+        class="w-full h-full object-cover object-center absolute inset-0"
+      />
+    </section>
+    <div
+      class="mt-4 mb-5 flex justify-start items-center gap-5 font-bold text-gray-500 text-sm"
+    >
+      <div class="flex gap-2 items-center">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 448 512"
+          class="w-[13px] h-[13px] -mt-[2px]"
+          fill="#1e3a8a"
+        >
+          <path
+            d="M128 0c17.7 0 32 14.3 32 32V64H288V32c0-17.7 14.3-32 32-32s32 14.3 32 32V64h48c26.5 0 48 21.5 48 48v48H0V112C0 85.5 21.5 64 48 64H96V32c0-17.7 14.3-32 32-32zM0 192H448V464c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V192zm64 80v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V272c0-8.8-7.2-16-16-16H80c-8.8 0-16 7.2-16 16zm128 0v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V272c0-8.8-7.2-16-16-16H208c-8.8 0-16 7.2-16 16zm144-16c-8.8 0-16 7.2-16 16v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V272c0-8.8-7.2-16-16-16H336zM64 400v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V400c0-8.8-7.2-16-16-16H80c-8.8 0-16 7.2-16 16zm144-16c-8.8 0-16 7.2-16 16v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V400c0-8.8-7.2-16-16-16H208zm112 16v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V400c0-8.8-7.2-16-16-16H336c-8.8 0-16 7.2-16 16z"
+          ></path>
+        </svg>
+        {theDay[new Date(items.items[0].fields.tanggalRelease).getDay()]},
+        {items.items[0].fields.tanggalRelease.split("-").reverse().join("-")}
+      </div>
+      <div class="flex gap-2 items-center">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 512 512"
+          class="w-[13px] h-[13px]"
+          fill="#1e3a8a"
+        >
+          <path
+            d="M399 384.2C376.9 345.8 335.4 320 288 320H224c-47.4 0-88.9 25.8-111 64.2c35.2 39.2 86.2 63.8 143 63.8s107.8-24.7 143-63.8zM512 256c0 141.4-114.6 256-256 256S0 397.4 0 256S114.6 0 256 0S512 114.6 512 256zM256 272c39.8 0 72-32.2 72-72s-32.2-72-72-72s-72 32.2-72 72s32.2 72 72 72z"
+          ></path>
+        </svg>
+        PPID BRIDA NTB
+      </div>
+    </div>
+    <div class="bg-white">
+      <h2
+        class="text-gray-800 text-xl sm:text-2xl font-semibold mb-2 md:mb-4 text-start"
+      >
+        {items.items[0].fields.judulBawahBesar}
+      </h2>
+
+      <div class="text-gray-500 sm:text-lg mb-6 md:mb-8 text-justify">
+        <RichTextToComp client:load theText={items.items[0].fields.konten} />
+      </div>
+    </div>
+  </main>
+</Layout>

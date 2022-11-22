@@ -1,0 +1,99 @@
+---
+import LayoutPPID from "@layouts/LayoutPPID.astro";
+
+import content from "contentful";
+const res: any = await content
+  .createClient({
+    space: "yhv40pnlg70o",
+    accessToken: "ho3n-fblnmKTj8z8e61eQ6L1L4ORhzKKo-S5IuXKvVk",
+  })
+  .getEntries({
+    content_type: "pengumumanPenting",
+  });
+
+const items = res.items;
+---
+
+<LayoutPPID title="Informasi Berkala | PPID BRIDA NTB" menu={4}>
+  <section
+    class="min-h-20 h-20 mb-10 flex justify-center items-center flex-1 shrink-0 bg-blue-900 overflow-hidden shadow-lg relative py-40 md:py-46 xl:py-44"
+    slot="hero"
+  >
+    <div class="sm:max-w-5xl flex flex-col items-center relative p-4">
+      <h1
+        class="text-white text-4xl sm:text-5xl md:text-6xl font-bold text-center flex items-center gap-5"
+      >
+        Pengumuman Penting
+      </h1>
+      <p
+        class="text-white text-xl sm:text-2xl md:text-3xl font-medium text-center relative top-5"
+      >
+        PPID BRIDA Provinsi NTB
+      </p>
+    </div>
+  </section>
+
+  <section class="antialiased bg-white border" x-data="app">
+    <div class="flex flex-col justify-center">
+      <header
+        class="px-5 py-4 border-b border-gray-100 flex justify-between items-center flex-col sm:flex-row gap-2"
+      >
+        <div class="font-semibold text-gray-800">Pengumuman Penting</div>
+        <div class="text-gray-500 text-xs font-bold">
+          &#9432; Tabel ini bisa di scroll
+        </div>
+      </header>
+
+      <div class="overflow-x-auto p-3">
+        <table class="table-auto w-full">
+          <thead
+            class="text-xs font-semibold uppercase text-gray-400 bg-gray-50"
+          >
+            <tr>
+              <th class="p-2 w-10">
+                <div class="font-semibold text-left">No.</div>
+              </th>
+              <th class="p-2">
+                <div class="font-semibold text-left">Nama Informasi</div>
+              </th>
+              <th class="p-2">
+                <div class="font-semibold text-left">Tanggal</div>
+              </th>
+              <th class="p-2">
+                <div class="font-semibold text-center">Link</div>
+              </th>
+            </tr>
+          </thead>
+
+          <tbody class="text-sm divide-y divide-gray-100">
+            {
+              items.map((item: any, index: number) => (
+                <tr>
+                  <td class="text-center">{index + 1}.</td>
+                  <td class="p-2">
+                    <div class="font-medium text-gray-800">
+                      {item.fields.namaInformasi}
+                    </div>
+                  </td>
+                  <td class="p-2">
+                    <div class="font-medium text-gray-800">
+                      {item.fields.tanggal.split("-").reverse().join("-")}
+                    </div>
+                  </td>
+                  <td class="text-center">
+                    <a
+                      href={item.fields.link}
+                      class="text-blue-500 font-bold underline"
+                    >
+                      Lihat
+                    </a>
+                  </td>
+                </tr>
+              ))
+            }
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+</LayoutPPID>

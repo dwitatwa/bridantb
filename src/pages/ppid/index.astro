@@ -1,0 +1,14 @@
+---
+import LayoutPPID from "@layouts/LayoutPPID.astro";
+import HeroSection from "@components/page-components/ppid/HeroSection.astro";
+import ProgramSection from "@components/page-components/ppid/ProgramSection.astro";
+import TeamSection from "@components/page-components/ppid/TeamSection.astro";
+---
+
+<LayoutPPID title="PPID BRIDA NTB" menu={1}>
+  <HeroSection slot="hero" />
+  <main>
+    <ProgramSection />
+    <TeamSection />
+  </main>
+</LayoutPPID>

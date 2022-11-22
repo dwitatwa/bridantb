@@ -1,0 +1,119 @@
+---
+import LayoutPPID from "@layouts/LayoutPPID.astro";
+
+const items = [
+  {
+    namaPejabat: "Dr. Ir. H. Amry Rakhman, M.Si",
+    jabatan: "Kepala Badan",
+    link: "#",
+  },
+  {
+    namaPejabat: "Retno Untari, S.Si, M.Kes",
+    jabatan: "Sekretaris Badan",
+    link: "https://brida.ntbprov.go.id/documents/sekban/LHKPN_174388_RETNO%20UNTARI.pdf",
+  },
+  {
+    namaPejabat: "Lalu Suryadi S.SP.MM.",
+    jabatan: "Kepala Bidang Penelitian Pengembangan Inovasi dan Teknologi",
+    link: "https://brida.ntbprov.go.id/documents/kabid/LHKPN_521222_L.SURYADI.pdf",
+  },
+  {
+    namaPejabat: "Ahmad Muslim, S.Pd",
+    jabatan:
+      "Kepala Bidang Pengembangan Sumber Daya Ilmu Pengetahuan dan Teknologi",
+    link: "https://brida.ntbprov.go.id/documents/kabid/Pengumuman_Harta_Kekayaan_LHKPN_789543.pdf",
+  },
+  {
+    namaPejabat: "Lale Ira Amrita Sari, ST",
+    jabatan: "Kepala Bidang Pemanfaatan Riset dan Inovasi",
+    link: "https://brida.ntbprov.go.id/documents/kabid/LHKPN_788833_LALE%20IRA.pdf",
+  },
+  {
+    namaPejabat: "Iskandar Sukmana",
+    jabatan: "Kepala Bidang Kemitraan dan Inkubasi Bisnis",
+    link: "https://brida.ntbprov.go.id/documents/kabid/LHKPN_ISKANDAR%20SUKMANA.pdf",
+  },
+];
+---
+
+<LayoutPPID title="Informasi Berkala | PPID BRIDA NTB" menu={4}>
+  <section
+    class="min-h-20 h-20 mb-10 flex justify-center items-center flex-1 shrink-0 bg-blue-900 overflow-hidden shadow-lg relative py-40 md:py-46 xl:py-44"
+    slot="hero"
+  >
+    <div class="sm:max-w-5xl flex flex-col items-center relative p-4">
+      <h1
+        class="text-white text-4xl sm:text-5xl md:text-6xl font-bold text-center flex items-center gap-5"
+      >
+        Informasi LHKPN Pejabat
+      </h1>
+      <p
+        class="text-white text-xl sm:text-2xl md:text-3xl font-medium text-center relative top-5"
+      >
+        PPID BRIDA Provinsi NTB
+      </p>
+    </div>
+  </section>
+
+  <section class="antialiased bg-white border" x-data="app">
+    <div class="flex flex-col justify-center">
+      <header
+        class="px-5 py-4 border-b border-gray-100 flex justify-between items-center flex-col sm:flex-row gap-2"
+      >
+        <div class="font-semibold text-gray-800">Renja & Renstra BRIDA NTB</div>
+        <!-- <div class="text-gray-500 text-xs font-bold">
+          &#9432; Tabel ini bisa di scroll
+        </div> -->
+      </header>
+
+      <div class="overflow-x-auto p-3">
+        <table class="table-auto w-full">
+          <thead
+            class="text-xs font-semibold uppercase text-gray-400 bg-gray-50"
+          >
+            <tr>
+              <th class="p-2 w-10">
+                <div class="font-semibold text-left">No.</div>
+              </th>
+              <th class="p-2">
+                <div class="font-semibold text-left">Nama Pejabat</div>
+              </th>
+              <th class="p-2">
+                <div class="font-semibold text-left">Jabatan</div>
+              </th>
+              <th class="p-2">
+                <div class="font-semibold text-center">Link</div>
+              </th>
+            </tr>
+          </thead>
+
+          <tbody class="text-sm divide-y divide-gray-100">
+            {
+              items.map((item: any, index: number) => (
+                <tr class="hover:bg-slate-200">
+                  <td class="text-center">{index + 1}.</td>
+                  <td class="p-2">
+                    <div class="font-medium text-gray-800">
+                      {item.namaPejabat}
+                    </div>
+                  </td>
+                  <td class="p-2">
+                    <div class="font-medium text-gray-800">{item.jabatan}</div>
+                  </td>
+                  <td class="text-center">
+                    <a
+                      href={item.link}
+                      class="text-blue-500 font-bold underline"
+                    >
+                      Lihat
+                    </a>
+                  </td>
+                </tr>
+              ))
+            }
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+</LayoutPPID>

@@ -1,5 +1,5 @@
 {
-  "name": "@example/basics",
+  "name": "@bridantb/new",
   "version": "0.0.1",
   "private": true,
   "scripts": {
@@ -10,6 +10,7 @@
     "astro": "astro"
   },
   "dependencies": {
+    "@contentful/rich-text-react-renderer": "^15.12.1",
     "astro": "^1.1.5",
     "contentful": "^9.2.5",
     "swiper": "^8.3.2"

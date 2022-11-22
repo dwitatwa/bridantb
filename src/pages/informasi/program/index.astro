@@ -1,15 +1,16 @@
 ---
 import Layout from "@layouts/Layout.astro";
-import MenuSection from "@components/page-components/informasi/MenuSection.astro";
-import Berita from "@components/page-components/informasi/berita-dan-kegiatan/Berita";
 import background from "@assets/informasiBackground.svg";
-import Program from "@components/page-components/informasi/pelaksanaan-program/Program";
-import Reels from "@components/page-components/informasi/Reels";
+import PelaksanaanProgram from "@components/page-components/informasi/pelaksanaan-program/PelaksanaanProgram";
 ---
 
-<Layout title="Informasi Seputar BRIDA NTB" menu={4} theClass="scroll-smooth ">
+<Layout
+  title="Berita dan Kegiatan BRIDA NTB"
+  menu={4}
+  theClass="scroll-smooth "
+>
   <section
-    class="min-h-20 h-20 mb-10 flex justify-center items-center flex-1 shrink-0 bg-blue-900 overflow-hidden shadow-lg relative py-40 md:py-46 xl:py-44"
+    class="min-h-20 h-20 flex justify-center items-center flex-1 shrink-0 bg-blue-900 overflow-hidden shadow-lg relative py-40 md:py-46 xl:py-44"
     slot="hero"
   >
     <div class="absolute inset-0 w-[1100px] lg:w-full h-full">
@@ -39,12 +40,9 @@ import Reels from "@components/page-components/informasi/Reels";
       <p
         class="text-white text-xl sm:text-2xl md:text-3xl font-medium text-center relative top-5"
       >
-        Badan Riset dan Inovasi Daerah NTB
+        Pelaksanaan Program BRIDA NTB
       </p>
     </div>
   </section>
-  <MenuSection />
-  <Program client:load />
-  <Berita client:load />
-  <Reels client:load />
+  <PelaksanaanProgram client:load />
 </Layout>

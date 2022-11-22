@@ -1,0 +1,237 @@
+---
+import LayoutPPID from "@layouts/LayoutPPID.astro";
+---
+
+<LayoutPPID title="Profil BRIDA NTB" menu={2}>
+  <section
+    class="min-h-20 h-20 mb-10 flex justify-center items-center flex-1 shrink-0 bg-blue-900 overflow-hidden shadow-lg relative py-40 md:py-46 xl:py-44"
+    slot="hero"
+  >
+    <div class="absolute inset-0 w-[1100px] lg:w-full h-full">
+      <!-- <img src={"#"} /> -->
+    </div>
+    <div class="sm:max-w-5xl flex flex-col items-center relative p-4">
+      <h1
+        class="text-white text-4xl sm:text-5xl md:text-6xl font-bold text-center flex items-center gap-5"
+      >
+        Profil
+      </h1>
+      <p
+        class="text-white text-xl sm:text-2xl md:text-3xl font-medium text-center relative top-5"
+      >
+        PPID BRIDA Provinsi NTB
+      </p>
+    </div>
+  </section>
+  <!-- <div class="bg-white py-6 sm:py-8 lg:py-12">
+    <div class="grid sm:grid-cols-2 xl:grid-cols-3 gap-12 xl:gap-16">
+      <Menu />
+    </div>
+  </div> -->
+  <section class="bg-white py-6 sm:py-8 lg:py-12">
+    <div class="mb-10 md:mb-10">
+      <h2
+        class="text-gray-800 text-2xl lg:text-3xl font-bold text-center mb-4 md:mb-6"
+      >
+        Visi dan Misi PPID BRIDA NTB
+      </h2>
+
+      <p
+        class="max-w-screen-md text-gray-500 md:text-lg md:text-center mx-auto text-justify"
+      >
+        Visi PPID BRIDA NTB adalah terwujudnya pelayanan informasi yang
+        transparan dan akuntabel untuk memenuhi hak pemohon informasi sesuai
+        dengan ketentuan peraturan perundang-undangan yang berlaku. Misi PPID
+        BRIDA NTB adalah :
+      </p>
+    </div>
+
+    <div class="grid sm:grid-cols-2 xl:grid-cols-4 gap-8 md:gap-10 xl:gap-10">
+      <div class="flex flex-col border rounded-lg p-4 md:p-6">
+        <div class="flex gap-4 md:gap-6">
+          <!-- <div
+            class="w-12 md:w-14 h-12 md:h-14 flex justify-center items-center shrink-0 bg-blue-900 text-white rounded-lg md:rounded-xl shadow-lg"
+          >
+            <h1 class="text-xl font-bold">M1</h1>
+          </div> -->
+
+          <div>
+            <h3 class="text-lg md:text-xl font-semibold mb-2">Misi Pertama</h3>
+            <p class="text-gray-500 mb-2">
+              Meningkatkan pengelolaan dan pelayanan informasi yang berkualitas,
+              benar dan bertanggung jawab.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="flex flex-col border rounded-lg p-4 md:p-6">
+        <div class="flex gap-4 md:gap-6">
+          <!-- <div
+            class="w-12 md:w-14 h-12 md:h-14 flex justify-center items-center shrink-0 bg-blue-900 text-white rounded-lg md:rounded-xl shadow-lg"
+          >
+            <h1 class="text-xl font-bold">M2</h1>
+          </div> -->
+
+          <div>
+            <h3 class="text-lg md:text-xl font-semibold mb-2">Misi Kedua</h3>
+            <p class="text-gray-500 mb-2">
+              Membangun dan mengembangkan sistem penyediaan dan layanan
+              informasi.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="flex flex-col border rounded-lg p-4 md:p-6">
+        <div class="flex gap-4 md:gap-6">
+          <!-- <div
+            class="w-12 md:w-14 h-12 md:h-14 flex justify-center items-center shrink-0 bg-blue-900 text-white rounded-lg md:rounded-xl shadow-lg"
+          >
+            <h1 class="text-xl font-bold">M3</h1>
+          </div> -->
+
+          <div>
+            <h3 class="text-lg md:text-xl font-semibold mb-2">Misi Ketiga</h3>
+            <p class="text-gray-500 mb-2">
+              Meningkatkan dan mengembangkan kompetensi dan kualitas SDM dalam
+              bidang pelayanan informasi.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="flex flex-col border rounded-lg p-4 md:p-6">
+        <div class="flex gap-4 md:gap-6">
+          <!-- <div
+            class="w-12 md:w-14 h-12 md:h-14 flex justify-center items-center shrink-0 bg-blue-900 text-white rounded-lg md:rounded-xl shadow-lg"
+          >
+            <h1 class="text-xl font-bold">M4</h1>
+          </div> -->
+
+          <div>
+            <h3 class="text-lg md:text-xl font-semibold mb-2">Misi Keempat</h3>
+            <p class="text-gray-500 mb-2">
+              Mewujudkan keterbukaan informasi Pemerintah Provinsi NTB dengan
+              proses yang cepat, tepat, mudah dan sederhana.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <div class="bg-white py-6 sm:py-8 lg:py-12">
+    <div
+      class="flex flex-col sm:flex-row bg-gray-100 rounded-lg border overflow-hidden"
+    >
+      <div
+        class="w-full sm:w-1/2 lg:w-2/5 h-48 sm:h-auto order-first sm:order-none bg-gray-300 relative"
+      >
+        <div class="bg-slate-900 w-full h-full absolute opacity-[70%]"></div>
+        <img
+          src="https://images.unsplash.com/photo-1612296727716-d6c69d2a2cbb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTl8fGRvY3VtZW50YXRpb258ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60"
+          loading="lazy"
+          alt="Photo by Andras Vas"
+          class="w-full h-full object-cover object-center"
+        />
+      </div>
+      <div
+        class="w-full sm:w-1/2 lg:w-3/5 flex flex-col p-4 sm:p-8"
+        id="tugas-dan-fungsi"
+      >
+        <h2
+          class="text-gray-800 text-xl md:text-2xl lg:text-4xl font-bold mb-4"
+        >
+          Tugas dan Fungsi PPID
+        </h2>
+
+        <p class="text-gray-600 mb-8">
+          Berdasarkan Peraturan Gubernur No. 24 Tahun 2018 tentang Tata Kerja
+          Pejabat Pengelola Informasi dan Data Pemerintah Provinsi NTB, PPID
+          BRIDA NTB diharapkan dapat memberikan pelayanan informasi yang
+          berkualitas kepada publik guna mewujudkan penyelenggaraan pemerintah
+          yang baik, terbuka, efektif dan efisien akuntabel serta dapat
+          dipertangggung jawabkan.
+        </p>
+        <div class="text-gray-600 mb-8">
+          Tugas PPID menurut Pergub NTB Nomor 24 Tahun 2018 pasal 14 ayat (2) :
+          <ol class="list-decimal px-5">
+            <li>
+              Melaksanakan kebijakan penyelenggaraan pelayanan informasi publik
+            </li>
+            <li>
+              Mendokumentasikan, memverifikasi, menyusun, menyimpan dan
+              mengelola bahan-bahan Informasi publik
+            </li>
+            <li>
+              Mendokumentasikan, Menyimpan menyediakan, dan memberi pelayanan
+              informasi publik
+            </li>
+            <li>
+              Mengajukan permohonan konsultasi uji konsekuensi untuk
+              pengecualian informasi kepada PPID Provinsi
+            </li>
+            <li>
+              Konsultasi upaya penyelesaian sengketa informasi publik kepada
+              PPID Provinsi
+            </li>
+            <li>Melaksanakan tugas-tugas yang diberikan oleh PPID Provinsi</li>
+          </ol>
+        </div>
+        <div class="text-gray-600 mb-8">
+          Fungsi PPID Pembantu menurut Pergub NTB Nomor 24 Tahun 2018 pasal 14
+          ayat (2)
+          <ol class="list-decimal px-5">
+            <li>
+              Pendokumentasian, pengelolaan, penyimpanan, pengklasifikasian
+              bahan-bahan Informasi publik;
+            </li>
+            <li>Penyimpanan, pengelolaan, dokumen informasi publik; dan</li>
+            <li>Pelayanan informasi publik.</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="bg-white my-10" id="other-menu">
+    <div class="grid grid-cols-1 md:grid-cols-2 rounded-lg gap-4 lg:gap-6">
+      <div
+        class="flex flex-col sm:flex-row justify-between items-center bg-gray-100 rounded-lg gap-4 p-4 md:p-8"
+      >
+        <div>
+          <h2
+            class="text-blue-900 text-xl md:text-2xl font-bold text-center sm:text-left"
+          >
+            Struktur PPID BRIDA NTB
+          </h2>
+          <p class="text-gray-600 text-center sm:text-left">
+            Struktur lengkap mengenai PPID BRIDA NTB
+          </p>
+        </div>
+
+        <a
+          href="/ppid/profil-ppid/struktur-ppid"
+          class="inline-block bg-blue-900 hover:bg-blue-600 active:bg-blue-700 focus-visible:ring ring-blue-300 text-white text-sm md:text-base font-semibold text-center rounded-lg outline-none transition duration-100 px-8 py-3"
+          >Lihat</a
+        >
+      </div>
+      <div
+        class="flex flex-col sm:flex-row justify-between items-center bg-gray-100 rounded-lg gap-4 p-4 md:p-8"
+      >
+        <div>
+          <h2
+            class="text-blue-900 text-xl md:text-2xl font-bold text-center sm:text-left"
+          >
+            Daftar Layanan Informasi Publik
+          </h2>
+          <p class="text-gray-600 text-center sm:text-left">
+            Daftar lengkap layanan informasi publik oleh PPID BRIDA NTB
+          </p>
+        </div>
+
+        <a
+          href="/ppid/profil-ppid/daftar-layanan-informasi-publik"
+          class="inline-block bg-blue-900 hover:bg-blue-600 active:bg-blue-700 focus-visible:ring ring-blue-300 text-white text-sm md:text-base font-semibold text-center rounded-lg outline-none transition duration-100 px-8 py-3"
+          >Lihat</a
+        >
+      </div>
+    </div>
+  </div>
+</LayoutPPID>
