@@ -6,14 +6,14 @@ export default function Reels() {
 
   const getReels = async () => {
     const response = await fetch(
-      "https://graph.instagram.com/me/media?fields=id,caption,media_type,media_url,thumbnail_url&access_token=IGQVJYaUVEVERtNExjM0J2NmFIWmJlUGc1QlJ4OFhLVWxvNnR6cXFNUUJvZA1I5amc5XzNjc3h0OTY2ZAXhKNFNfUTV6bkcwS3lDbFU0UE9VOGdaYmlHdzg3ZA3JiQndSdjFHS2NYa0ZA0cGR2TkpLNjZApQgZDZD"
-    ).then((res) => res.json());
+      `https://graph.instagram.com/me/media?fields=id,caption,media_type,media_url,thumbnail_url&access_token=${
+        import.meta.env.PUBLIC_INSTAGRAM_TOKEN
+      }`
+    )
+      .then((res) => res.json())
+      .catch((e) => console.error(e));
     setItems(response.data.filter((item: any) => item.media_type === "VIDEO"));
     setIsLoading(false);
-
-    // console.log(
-    //   response.data.filter((item: any) => item.media_type === "VIDEO")
-    // );
   };
 
   useEffect(() => {

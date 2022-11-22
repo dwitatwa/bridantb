@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg class="w-[1000px] lg:w-full" preserveAspectRatio="none" version="1.1" viewBox="0 0 1440 430" xmlns="http://www.w3.org/2000/svg">
+<g fill="none" mask="url(#f)">
+<rect width="1440" height="430" fill="rgba(31, 58, 138, 1)"/>
+<rect transform="rotate(260.35 1384.4 90.56)" x="1287.1" y="-6.72" width="194.56" height="194.56" clip-path="url(#k)" fill="url(#e)"/>
+<circle cx="783.45" cy="96.51" r="35.833" stroke="rgba(27, 134, 241, 1)"/>
+<circle cx="556.72" cy="340.4" r="67.69" stroke="rgba(27, 134, 241, 1)" stroke-dasharray="4, 4" stroke-width="2.46"/>
+<path d="m686.76 404.93-6.58-10.99 9.27-8.83-6.59-10.99 9.27-8.83-6.58-10.98 9.27-8.84m-0.13 60.53-6.59-10.98 9.27-8.84-6.58-10.98 9.27-8.84-6.58-10.98 9.27-8.83m-0.14 60.53-6.58-10.99 9.27-8.83-6.58-10.99 9.27-8.83-6.59-10.98 9.27-8.84" stroke="rgba(27, 134, 241, 1)" stroke-dasharray="2, 2" stroke-width="2.7"/>
+<path d="m1514.3 483.78 59.28-40.51-75.634-25.739z" stroke="rgba(27, 134, 241, 1)" stroke-dasharray="2, 2" stroke-width="1.63"/>
+<rect transform="rotate(-4.94 49.92 344.27)" x="-40.08" y="254.27" width="180" height="180" clip-path="url(#j)" fill="url(#d)"/>
+<rect transform="rotate(157.65 334.11 83.1)" x="304.11" y="53.1" width="60" height="60" clip-path="url(#i)" fill="url(#c)"/>
+<rect transform="rotate(-45.94 182.47 198.56)" x="104.47" y="120.56" width="156" height="156" clip-path="url(#h)" fill="url(#b)"/>
+<circle cx="1036.1" cy="407.65" r="35.833" fill="rgba(27, 134, 241, 1)"/>
+<path d="m131.85 286.03 11.93-4.66 7.16 10.61 11.93-4.67 7.17 10.62 11.93-4.67 7.17 10.61" stroke="rgba(27, 134, 241, 1)" stroke-dasharray="3, 2" stroke-width="2.98"/>
+<path d="m1313.5 15.94-12.1 4.17-6.73-10.9-12.11 4.17-6.72-10.9-12.11 4.16-6.72-10.89m59.19 12.66-12.11 4.17-6.73-10.9-12.1 4.16-6.73-10.9-12.11 4.17-6.72-10.9" stroke="rgba(27, 134, 241, 1)"/>
+<path d="m1153.1 197.53-8.97 9.13-10.88-6.74-8.98 9.13-10.88-6.75-8.97 9.14-10.89-6.75" stroke="rgba(27, 134, 241, 1)"/>
+<rect transform="rotate(-.61 901.97 43.16)" x="865.25" y="6.44" width="73.44" height="73.44" clip-path="url(#g)" fill="url(#a)"/>
+<circle cx="1192.4" cy="412.9" r="35.833" fill="rgba(27, 134, 241, 1)"/>
+<circle cx="447.41" cy="231.69" r="52.53" stroke="rgba(27, 134, 241, 1)" stroke-dasharray="3, 2"/>
+<path d="m1118.8 37.84 12.73-1.38 4.14 12.11 12.73-1.38 4.14 12.12 12.74-1.38 4.14 12.12m-54.92-25.46 12.73-1.38 4.15 12.11 12.73-1.38 4.14 12.12 12.73-1.38 4.14 12.12" stroke="rgba(27, 134, 241, 1)" stroke-width="1.34"/>
+</g>
+<defs>
+<mask id="f">
+<rect width="1440" height="430" fill="#fff"/>
+</mask>
+<pattern id="e" width="194.56" height="12.16" patternUnits="userSpaceOnUse">
+<rect width="194.56" height="6.08" fill="rgba(27, 134, 241, 1)"/>
+<rect y="6.08" width="194.56" height="6.08" fill="rgba(0, 0, 0, 0)"/>
+</pattern>
+<clipPath id="k">
+<circle cx="1384.4" cy="90.56" r="48.64"/>
+</clipPath>
+<pattern id="d" width="180" height="6" patternUnits="userSpaceOnUse">
+<rect width="180" height="3" fill="rgba(27, 134, 241, 1)"/>
+<rect y="3" width="180" height="3" fill="rgba(0, 0, 0, 0)"/>
+</pattern>
+<clipPath id="j">
+<circle cx="49.92" cy="344.27" r="45"/>
+</clipPath>
+<pattern id="c" width="6" height="6" patternUnits="userSpaceOnUse">
+<path d="m0 6 3-6 3 6" fill="none" stroke="rgba(27, 134, 241, 1)"/>
+</pattern>
+<clipPath id="i">
+<circle cx="334.11" cy="83.1" r="15"/>
+</clipPath>
+<pattern id="b" width="6" height="6" patternUnits="userSpaceOnUse">
+<path d="m0 6 3-6 3 6" fill="none" stroke="rgba(27, 134, 241, 1)"/>
+</pattern>
+<clipPath id="h">
+<circle cx="182.47" cy="198.56" r="39"/>
+</clipPath>
+<pattern id="a" width="6.12" height="6.12" patternUnits="userSpaceOnUse">
+<path d="m3.06 1v4.12m-2.06-2.06h4.12" fill="none" stroke="rgba(27, 134, 241, 1)"/>
+</pattern>
+<clipPath id="g">
+<circle cx="901.97" cy="43.16" r="18.36"/>
+</clipPath>
+</defs>
+</svg>
