@@ -1,6 +1,7 @@
 ---
 import Layout from "../../layouts/Layout.astro";
 import background from "../../assets/layananBackground.svg";
+import KepuasanMasyarakat from "@components/page-components/layanan/KepuasanMasyarakat";
 ---
 
 <Layout title="Layanan BRIDA NTB" menu={5}>
@@ -47,25 +48,41 @@ import background from "../../assets/layananBackground.svg";
           Layanan Penelitian
         </h3>
         <p class="text-gray-500 text-justify text-sm">
-          This is a section of some simple filler text, also known as
-          placeholder text. It shares some characteristics of a real written
-          text.
+          Layanan pengajuan surat izin penelitian untuk keperluan Tugas Akhir,
+          Tugas Kuliah atau kebutuhan lainnya.
         </p>
-        <a
-          href="#"
-          class="px-4 py-2 border border-blue-900 text-blue-900 w-fit rounded-lg mt-2 text-sm flex items-center gap-2 hover:bg-blue-50"
-          ><svg
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 24 24"
-            fill="currentColor"
-            class="w-4 h-4"
-          >
-            <path
-              d="M3.478 2.405a.75.75 0 00-.926.94l2.432 7.905H13.5a.75.75 0 010 1.5H4.984l-2.432 7.905a.75.75 0 00.926.94 60.519 60.519 0 0018.445-8.986.75.75 0 000-1.218A60.517 60.517 0 003.478 2.405z"
-            ></path>
-          </svg>
-          <span>Ajukan Layanan</span>
-        </a>
+        <div class="flex sm:gap-2 flex-col sm:flex-row my-2">
+          <a
+            href="/layanan/progres-layanan-penelitian"
+            class="px-2 py-1 border border-blue-900 text-blue-900 w-fit rounded-lg mt-2 text-xs flex items-center gap-2 hover:bg-blue-50"
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 512 512"
+              fill="currentColor"
+              class="w-4 h-4"
+            >
+              <path
+                d="M256 512c141.4 0 256-114.6 256-256S397.4 0 256 0S0 114.6 0 256S114.6 512 256 512zM216 336h24V272H216c-13.3 0-24-10.7-24-24s10.7-24 24-24h48c13.3 0 24 10.7 24 24v88h8c13.3 0 24 10.7 24 24s-10.7 24-24 24H216c-13.3 0-24-10.7-24-24s10.7-24 24-24zm40-144c-17.7 0-32-14.3-32-32s14.3-32 32-32s32 14.3 32 32s-14.3 32-32 32z"
+              ></path>
+            </svg>
+            <span>Progres Pengajuan</span>
+          </a>
+          <a
+            href="https://docs.google.com/forms/d/e/1FAIpQLSfl8q2A2tiPrl-5zlNsn6NcTz2XhWGVb2tPeC031WOlPSVAUw/viewform"
+            class="px-2 py-1 border border-blue-900 text-blue-900 w-fit rounded-lg mt-2 text-xs flex items-center gap-2 hover:bg-blue-50"
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+              class="w-4 h-4"
+            >
+              <path
+                d="M3.478 2.405a.75.75 0 00-.926.94l2.432 7.905H13.5a.75.75 0 010 1.5H4.984l-2.432 7.905a.75.75 0 00.926.94 60.519 60.519 0 0018.445-8.986.75.75 0 000-1.218A60.517 60.517 0 003.478 2.405z"
+              ></path>
+            </svg>
+            <span>Ajukan Layanan</span>
+          </a>
+        </div>
       </div>
       <!-- question - end -->
 
@@ -74,26 +91,43 @@ import background from "../../assets/layananBackground.svg";
         <h3 class="text-blue-900 text-lg md:text-xl font-semibold mb-2">
           Layanan Kemitraan dan Inkubasi
         </h3>
-        <p class="text-gray-500 text-justify">
-          This is a section of some simple filler text, also known as
-          placeholder text. It shares some characteristics of a real written
-          text.
+        <p class="text-gray-500 text-justify text-sm">
+          Layanan ini merupakan fasilitas bagi pelaku usaha NTB untuk dapat
+          bergabung menjadi Tenant atau Mitra BRIDA NTB
         </p>
-        <a
-          href="#"
-          class="px-4 py-2 border border-blue-900 text-blue-900 w-fit rounded-lg mt-2 text-sm flex items-center gap-2 hover:bg-blue-50"
-          ><svg
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 24 24"
-            fill="currentColor"
-            class="w-4 h-4"
+        <div class="flex sm:gap-2 flex-col sm:flex-row my-2">
+          <a
+            href="https://docs.google.com/forms/d/e/1FAIpQLSfNaRO7iIf-iG4NjIEaOd9PQ-eHaAk9w_MibSAs0qb5hLYjjQ/viewform?usp=sf_link"
+            class="px-2 py-1 border border-blue-900 text-blue-900 w-fit rounded-lg mt-2 text-xs flex items-center gap-2 hover:bg-blue-50"
           >
-            <path
-              d="M3.478 2.405a.75.75 0 00-.926.94l2.432 7.905H13.5a.75.75 0 010 1.5H4.984l-2.432 7.905a.75.75 0 00.926.94 60.519 60.519 0 0018.445-8.986.75.75 0 000-1.218A60.517 60.517 0 003.478 2.405z"
-            ></path>
-          </svg>
-          <span>Ajukan Layanan</span>
-        </a>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+              class="w-4 h-4"
+            >
+              <path
+                d="M3.478 2.405a.75.75 0 00-.926.94l2.432 7.905H13.5a.75.75 0 010 1.5H4.984l-2.432 7.905a.75.75 0 00.926.94 60.519 60.519 0 0018.445-8.986.75.75 0 000-1.218A60.517 60.517 0 003.478 2.405z"
+              ></path>
+            </svg>
+            <span>Pendaftaran Startup</span>
+          </a>
+          <a
+            href="https://docs.google.com/forms/d/e/1FAIpQLSez3b3nk7t4VwVnSF8yWNvA9qAEt_G-vz_Xa20p6wjLjIiHtg/viewform?usp=sf_link"
+            class="px-2 py-1 border border-blue-900 text-blue-900 w-fit rounded-lg mt-2 text-xs flex items-center gap-2 hover:bg-blue-50"
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+              class="w-4 h-4"
+            >
+              <path
+                d="M3.478 2.405a.75.75 0 00-.926.94l2.432 7.905H13.5a.75.75 0 010 1.5H4.984l-2.432 7.905a.75.75 0 00.926.94 60.519 60.519 0 0018.445-8.986.75.75 0 000-1.218A60.517 60.517 0 003.478 2.405z"
+              ></path>
+            </svg>
+            <span>Pendaftaran Mitra</span>
+          </a>
+        </div>
       </div>
       <!-- question - end -->
 
@@ -102,54 +136,43 @@ import background from "../../assets/layananBackground.svg";
         <h3 class="text-blue-900 text-lg md:text-xl font-semibold mb-2">
           Layanan Kepuasan Masyarakat
         </h3>
-        <p class="text-gray-500 text-justify">
-          This is a section of some simple filler text, also known as
-          placeholder text. It shares some characteristics of a real written
-          text.
+        <p class="text-gray-500 text-justify text-sm">
+          Bantu kami untuk meningkatkan Kualitas Pelayanan dan menjadi lebih
+          baik, dengan cara mengisi form penilaian pada tombol dibawah ini.
         </p>
-        <a
-          href="#"
-          class="px-4 py-2 border border-blue-900 text-blue-900 w-fit rounded-lg mt-2 text-sm flex items-center gap-2 hover:bg-blue-50"
-          ><svg
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 24 24"
-            fill="currentColor"
-            class="w-4 h-4"
+        <div class="flex sm:gap-2 flex-col sm:flex-row my-2">
+          <a
+            href="/layanan/kepuasan-masyarakat/survey"
+            class="px-2 py-1 border border-blue-900 text-blue-900 w-fit rounded-lg mt-2 text-xs flex items-center gap-2 hover:bg-blue-50"
           >
-            <path
-              d="M3.478 2.405a.75.75 0 00-.926.94l2.432 7.905H13.5a.75.75 0 010 1.5H4.984l-2.432 7.905a.75.75 0 00.926.94 60.519 60.519 0 0018.445-8.986.75.75 0 000-1.218A60.517 60.517 0 003.478 2.405z"
-            ></path>
-          </svg>
-          <span>Ajukan Layanan</span>
-        </a>
-      </div>
-      <!-- question - end -->
-
-      <!-- question - start -->
-      <div class="border border-slate-200 p-4 rounded-md shadow-sm">
-        <h3 class="text-blue-900 text-lg md:text-xl font-semibold mb-2">
-          Layanan Informasi Publik
-        </h3>
-        <p class="text-gray-500 text-justify">
-          This is a section of some simple filler text, also known as
-          placeholder text. It shares some characteristics of a real written
-          text.
-        </p>
-        <a
-          href="#"
-          class="px-4 py-2 border border-blue-900 text-blue-900 w-fit rounded-lg mt-2 text-sm flex items-center gap-2 hover:bg-blue-50"
-          ><svg
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 24 24"
-            fill="currentColor"
-            class="w-4 h-4"
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+              class="w-4 h-4"
+            >
+              <path
+                d="M3.478 2.405a.75.75 0 00-.926.94l2.432 7.905H13.5a.75.75 0 010 1.5H4.984l-2.432 7.905a.75.75 0 00.926.94 60.519 60.519 0 0018.445-8.986.75.75 0 000-1.218A60.517 60.517 0 003.478 2.405z"
+              ></path>
+            </svg>
+            <span>Ajukan Layanan</span>
+          </a>
+          <button
+            class="px-2 py-1 border border-blue-900 text-blue-900 w-fit rounded-lg mt-2 text-xs flex items-center gap-2 hover:bg-blue-50"
           >
-            <path
-              d="M3.478 2.405a.75.75 0 00-.926.94l2.432 7.905H13.5a.75.75 0 010 1.5H4.984l-2.432 7.905a.75.75 0 00.926.94 60.519 60.519 0 0018.445-8.986.75.75 0 000-1.218A60.517 60.517 0 003.478 2.405z"
-            ></path>
-          </svg>
-          <span>Ajukan Layanan</span>
-        </a>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 576 512"
+              fill="currentColor"
+              class="w-4 h-4"
+            >
+              <path
+                d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"
+              ></path>
+            </svg>
+            <span>Berikan Penilaian</span>
+          </button>
+        </div>
       </div>
       <!-- question - end -->
 
@@ -158,42 +181,120 @@ import background from "../../assets/layananBackground.svg";
         <h3 class="text-blue-900 text-lg md:text-xl font-semibold mb-2">
           Layanan Pengaduan
         </h3>
-        <p class="text-gray-500 text-justify">
-          This is a section of some simple filler text, also known as
-          placeholder text. It shares some characteristics of a real written
-          text.
+        <p class="text-gray-500 text-justify text-sm">
+          Layanan Pengaduan BRIDA NTB kini telah terintegrasi dengan NTB Care,
+          Kanal pengaduan resmi milik Pemerintah Provinsi Nusa Tenggara Barat
+          dan pengaduan secara Nasional melalui Kanal Lapor!
         </p>
-        <a
-          href="#"
-          class="px-4 py-2 border border-blue-900 text-blue-900 w-fit rounded-lg mt-2 text-sm flex items-center gap-2 hover:bg-blue-50"
-          ><svg
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 24 24"
-            fill="currentColor"
-            class="w-4 h-4"
+        <div class="flex flex-col sm:flex-row flex-wrap my-2">
+          <a
+            href="https://care.ntbprov.go.id/"
+            class="px-2 py-1 border border-blue-900 text-blue-900 w-fit rounded-lg mt-2 text-xs flex items-center gap-2 hover:bg-blue-50"
           >
-            <path
-              d="M3.478 2.405a.75.75 0 00-.926.94l2.432 7.905H13.5a.75.75 0 010 1.5H4.984l-2.432 7.905a.75.75 0 00.926.94 60.519 60.519 0 0018.445-8.986.75.75 0 000-1.218A60.517 60.517 0 003.478 2.405z"
-            ></path>
-          </svg>
-          <span>Ajukan Layanan</span>
-        </a>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+              class="w-4 h-4"
+            >
+              <path
+                d="M3.478 2.405a.75.75 0 00-.926.94l2.432 7.905H13.5a.75.75 0 010 1.5H4.984l-2.432 7.905a.75.75 0 00.926.94 60.519 60.519 0 0018.445-8.986.75.75 0 000-1.218A60.517 60.517 0 003.478 2.405z"
+              ></path>
+            </svg>
+            <span>Pengaduan Melalui NTB Care</span>
+          </a>
+          <a
+            href="https://www.lapor.go.id/"
+            class="px-2 py-1 border border-blue-900 text-blue-900 w-fit rounded-lg mt-2 text-xs flex items-center gap-2 hover:bg-blue-50"
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+              class="w-4 h-4"
+            >
+              <path
+                d="M3.478 2.405a.75.75 0 00-.926.94l2.432 7.905H13.5a.75.75 0 010 1.5H4.984l-2.432 7.905a.75.75 0 00.926.94 60.519 60.519 0 0018.445-8.986.75.75 0 000-1.218A60.517 60.517 0 003.478 2.405z"
+              ></path>
+            </svg>
+            <span>Pengaduan Melalui Kanal Lapor</span>
+          </a>
+          <a
+            href="https://forms.gle/Tg245jn6AKdbynRi6"
+            class="px-2 py-1 border border-blue-900 text-blue-900 w-fit rounded-lg mt-2 text-xs flex items-center gap-2 hover:bg-blue-50"
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+              class="w-4 h-4"
+            >
+              <path
+                d="M3.478 2.405a.75.75 0 00-.926.94l2.432 7.905H13.5a.75.75 0 010 1.5H4.984l-2.432 7.905a.75.75 0 00.926.94 60.519 60.519 0 0018.445-8.986.75.75 0 000-1.218A60.517 60.517 0 003.478 2.405z"
+              ></path>
+            </svg>
+            <span>Penyalahgunaan Wewenang</span>
+          </a>
+        </div>
       </div>
-      <!-- question - end -->
-
-      <!-- question - start -->
+      <div class="border border-slate-200 p-4 rounded-md shadow-sm">
+        <h3 class="text-blue-900 text-lg md:text-xl font-semibold mb-2">
+          Layanan Informasi Publik
+        </h3>
+        <p class="text-gray-500 text-justify text-sm mb-2">
+          Kewajiban Badan Riset dan Inovasi Daerah Provinsi NTB adalah
+          memberikan pelayanan informasi kepada pemohon informasi Publik secara
+          cepat, tepat waktu, biaya proporsional dan cara yang mudah.
+        </p>
+        <p class="text-gray-500 text-justify text-sm">
+          Untuk dapat memperoleh salinan informasi yang Anda butuhkan, Anda
+          dapat mengisi formulir yang ada dan mengikuti tata cara untuk
+          memperoleh informasi publik dengan standar biaya layanan informasi
+          yang berlaku.
+        </p>
+        <div class="flex sm:gap-2 flex-col sm:flex-row my-2">
+          <a
+            href="https://forms.gle/Hys3uDhYvUsXM2uD9"
+            class="px-2 py-1 border border-blue-900 text-blue-900 w-fit rounded-lg mt-2 text-xs flex items-center gap-2 hover:bg-blue-50"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+              class="w-4 h-4"
+            >
+              <path
+                d="M3.478 2.405a.75.75 0 00-.926.94l2.432 7.905H13.5a.75.75 0 010 1.5H4.984l-2.432 7.905a.75.75 0 00.926.94 60.519 60.519 0 0018.445-8.986.75.75 0 000-1.218A60.517 60.517 0 003.478 2.405z"
+              ></path>
+            </svg>
+            <span>Form Permohonan</span>
+          </a>
+          <a
+            href="https://drive.google.com/file/d/1BZQ2XaC9Zz-J9c4EKHEuGEcTUo_I103T/view?usp=share_link"
+            class="px-2 py-1 border border-blue-900 text-blue-900 w-fit rounded-lg mt-2 text-xs flex items-center gap-2 hover:bg-blue-50"
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+              class="w-4 h-4"
+            >
+              <path
+                d="M3.478 2.405a.75.75 0 00-.926.94l2.432 7.905H13.5a.75.75 0 010 1.5H4.984l-2.432 7.905a.75.75 0 00.926.94 60.519 60.519 0 0018.445-8.986.75.75 0 000-1.218A60.517 60.517 0 003.478 2.405z"
+              ></path>
+            </svg>
+            <span>Standar Biaya Layanan</span>
+          </a>
+        </div>
+      </div>
       <div class="border border-slate-200 p-4 rounded-md shadow-sm">
         <h3 class="text-blue-900 text-lg md:text-xl font-semibold mb-2">
           Layanan Magang
         </h3>
-        <p class="text-gray-500 text-justify">
-          This is a section of some simple filler text, also known as
-          placeholder text. It shares some characteristics of a real written
-          text.
+        <p class="text-gray-500 text-justify text-sm">
+          Meningkatkan kualitas SDM dengan Program Magang bagi Mahasiswa atau
+          Pelajar SMK dari Seluruh Indonesia
         </p>
         <a
-          href="#"
-          class="px-4 py-2 border border-blue-900 text-blue-900 w-fit rounded-lg mt-2 text-sm flex items-center gap-2 hover:bg-blue-50"
+          href="https://forms.gle/x9tso2rkAyTHTVrZ6"
+          class="px-2 py-1 border border-blue-900 text-blue-900 w-fit rounded-lg mt-2 text-xs flex items-center gap-2 hover:bg-blue-50"
           ><svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 24 24"
@@ -238,14 +339,14 @@ import background from "../../assets/layananBackground.svg";
         </h2>
 
         <p class="max-w-md text-gray-600 mb-8">
-          This is a section of some simple filler text, also known as
-          placeholder text. It shares some characteristics of a real written
-          text.
+          Pejabat Pengelola Informasi dan Dokumentasi (PPID) adalah pejabat yang
+          bertanggung jawab di bidang penyimpanan, pendokumentasian, penyediaan
+          dan/ atau pelayanan informasi di badan publik.
         </p>
 
         <div class="mt-auto">
           <a
-            href="#"
+            href="/ppid"
             class="flex items-center w-fit gap-2 bg-blue-500 hover:bg-white hover:text-blue-900 active:bg-gray-200 focus-visible:ring ring-indigo-300 text-white text-sm md:text-base font-semibold text-center rounded-lg outline-none transition duration-100 px-8 py-3"
             >Layanan PPID <svg
               xmlns="http://www.w3.org/2000/svg"
