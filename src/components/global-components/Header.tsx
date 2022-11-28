@@ -78,7 +78,7 @@ export default function Header({ index }: propTypes) {
             PPID
           </a>
           <a
-            href="#"
+            href="/kontak-kami"
             className="lg:inline-block bg-blue-900 hover:bg-white hover:text-blue-900 border-[2px] border-blue-900 focus-visible:ring ring-blue-300 text-white active:text-white text-sm md:text-base font-semibold text-center rounded-lg outline-none transition duration-100 px-8 py-3"
           >
             Kontak Kami
@@ -170,7 +170,7 @@ export default function Header({ index }: propTypes) {
             </span>
           </a>
           <a
-            href="/kontak"
+            href="/kontak-kami"
             className="flex border rounded-md p-3 justify-center"
           >
             <span className="mt-[1px] text-xs font-medium text-slate-500">
