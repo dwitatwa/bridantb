@@ -1,0 +1,160 @@
+---
+import Layout from "@layouts/Layout.astro";
+import background from "@assets/layananBackground.svg";
+import KepuasanMasyarakat from "@components/page-components/layanan/KepuasanMasyarakat";
+---
+
+<Layout title="Layanan BRIDA NTB" menu={5}>
+  <section
+    class="min-h-20 h-20 mb-10 flex justify-center items-center flex-1 shrink-0 bg-blue-900 overflow-hidden shadow-lg relative py-40 md:py-46 xl:py-44"
+    slot="hero"
+  >
+    <div class="absolute inset-0 w-[1100px] lg:w-full h-full">
+      <img src={background} />
+    </div>
+    <div class="sm:max-w-5xl flex flex-col items-center relative p-4">
+      <h1
+        class="text-white text-4xl sm:text-5xl md:text-6xl font-bold text-center flex items-center"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 24 24"
+          fill="currentColor"
+          class="w-10 sm:w-12 md:w-16 lg:w-16 xl:w-16 mr-1"
+        >
+          <path
+            d="M4.913 2.658c2.075-.27 4.19-.408 6.337-.408 2.147 0 4.262.139 6.337.408 1.922.25 3.291 1.861 3.405 3.727a4.403 4.403 0 00-1.032-.211 50.89 50.89 0 00-8.42 0c-2.358.196-4.04 2.19-4.04 4.434v4.286a4.47 4.47 0 002.433 3.984L7.28 21.53A.75.75 0 016 21v-4.03a48.527 48.527 0 01-1.087-.128C2.905 16.58 1.5 14.833 1.5 12.862V6.638c0-1.97 1.405-3.718 3.413-3.979z"
+          ></path>
+          <path
+            d="M15.75 7.5c-1.376 0-2.739.057-4.086.169C10.124 7.797 9 9.103 9 10.609v4.285c0 1.507 1.128 2.814 2.67 2.94 1.243.102 2.5.157 3.768.165l2.782 2.781a.75.75 0 001.28-.53v-2.39l.33-.026c1.542-.125 2.67-1.433 2.67-2.94v-4.286c0-1.505-1.125-2.811-2.664-2.94A49.392 49.392 0 0015.75 7.5z"
+          ></path>
+        </svg>
+
+        Kontak Kami
+      </h1>
+      <p
+        class="text-white text-xl sm:text-2xl md:text-3xl font-medium text-center relative top-5"
+      >
+        Badan Riset dan Inovasi Daerah Provinsi NTB
+      </p>
+    </div>
+  </section>
+  <div class="bg-white py-6 sm:py-8 lg:py-12">
+    <div class="grid sm:grid-cols-2 xl:grid-cols-3 gap-12 xl:gap-16">
+      <div class="flex flex-col border rounded-lg p-4 md:p-6">
+        <div class="flex gap-4 md:gap-6">
+          <div
+            class="w-12 md:w-14 h-12 md:h-14 flex justify-center items-center shrink-0 bg-blue-900 text-white rounded-lg md:rounded-xl shadow-lg"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="icon icon-tabler icon-tabler-mail"
+              width="32"
+              height="32"
+              viewBox="0 0 24 24"
+              stroke-width="2"
+              stroke="currentColor"
+              fill="none"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+              <rect x="3" y="5" width="18" height="14" rx="2"></rect>
+              <polyline points="3 7 12 13 21 7"></polyline>
+            </svg>
+          </div>
+
+          <div>
+            <h3 class="text-lg md:text-xl font-semibold mb-2">Email</h3>
+            <p class="text-gray-500 mb-2">
+              Anda bisa menghubungi kami melalui Email Resmi milik BRIDA NTB
+              dengan cara menekan tombol dibawah
+            </p>
+            <a
+              href="mailto:brida.ntbprov@gmail.com"
+              class="text-blue-900 hover:text-blue-600 active:text-blue-700 font-bold transition duration-100"
+              >Hubungi Kami</a
+            >
+          </div>
+        </div>
+      </div>
+      <div class="flex flex-col border rounded-lg p-4 md:p-6">
+        <div class="flex gap-4 md:gap-6">
+          <div
+            class="w-12 md:w-14 h-12 md:h-14 flex justify-center items-center shrink-0 bg-blue-900 text-white rounded-lg md:rounded-xl shadow-lg"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="icon icon-tabler icon-tabler-brand-whatsapp"
+              width="32"
+              height="32"
+              viewBox="0 0 24 24"
+              stroke-width="2"
+              stroke="currentColor"
+              fill="none"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+              <path d="M3 21l1.65 -3.8a9 9 0 1 1 3.4 2.9l-5.05 .9"></path>
+              <path
+                d="M9 10a0.5 .5 0 0 0 1 0v-1a0.5 .5 0 0 0 -1 0v1a5 5 0 0 0 5 5h1a0.5 .5 0 0 0 0 -1h-1a0.5 .5 0 0 0 0 1"
+              ></path>
+            </svg>
+          </div>
+
+          <div>
+            <h3 class="text-lg md:text-xl font-semibold mb-2">WhatsApp</h3>
+            <p class="text-gray-500 mb-2">
+              Anda bisa menghubungi kami melalui WhatsApp Resmi milik BRIDA NTB
+              dengan cara menekan tombol dibawah
+            </p>
+            <a
+              href="https://wa.me/6285955150029"
+              class="text-blue-900 hover:text-blue-600 active:text-blue-700 font-bold transition duration-100"
+              >Hubungi Kami</a
+            >
+          </div>
+        </div>
+      </div>
+      <div class="flex flex-col border rounded-lg p-4 md:p-6">
+        <div class="flex gap-4 md:gap-6">
+          <div
+            class="w-12 md:w-14 h-12 md:h-14 flex justify-center items-center shrink-0 bg-blue-900 text-white rounded-lg md:rounded-xl shadow-lg"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="icon icon-tabler icon-tabler-brand-instagram"
+              width="32"
+              height="32"
+              viewBox="0 0 24 24"
+              stroke-width="2"
+              stroke="currentColor"
+              fill="none"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+              <rect x="4" y="4" width="16" height="16" rx="4"></rect>
+              <circle cx="12" cy="12" r="3"></circle>
+              <line x1="16.5" y1="7.5" x2="16.5" y2="7.501"></line>
+            </svg>
+          </div>
+
+          <div>
+            <h3 class="text-lg md:text-xl font-semibold mb-2">Instagram</h3>
+            <p class="text-gray-500 mb-2">
+              Anda bisa menghubungi kami melalui Instagram dengan cara mengirim
+              Direct Message (DM)
+            </p>
+            <a
+              href="https://www.instagram.com/brida_ntb/"
+              class="text-blue-900 hover:text-blue-600 active:text-blue-700 font-bold transition duration-100"
+              >Hubungi Kami</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</Layout>
