@@ -1,7 +1,10 @@
 ---
 import Layout from "../../layouts/Layout.astro";
 import background from "../../assets/layananBackground.svg";
-import KepuasanMasyarakat from "@components/page-components/layanan/KepuasanMasyarakat";
+import LayananPenelitian from "@components/page-components/layanan/layanan-penelitian/Button";
+import KemitraanDanInkubasi from "@components/page-components/layanan/layanan-kemitraan-dan-inkubasi/Button";
+import KepuasanMasyarakat from "@components/page-components/layanan/layanan-kepuasan-masyarakat/Button";
+import LayananPengaduan from "@components/page-components/layanan/layanan-pengaduan/Button";
 ---
 
 <Layout title="Layanan BRIDA NTB" menu={5}>
@@ -41,289 +44,149 @@ import KepuasanMasyarakat from "@components/page-components/layanan/KepuasanMasy
   </section>
 
   <div class="bg-white py-6 sm:py-8 lg:py-12">
-    <div class="grid sm:grid-cols-2 xl:grid-cols-3 gap-8 md:gap-12 xl:gap-16">
-      <div class="border border-slate-200 p-4 rounded-md shadow-sm">
-        <h3 class="text-blue-900 text-lg md:text-xl font-semibold mb-2">
-          Layanan Pendaftaran Hasil Riset dan Inovasi Teknologi
-        </h3>
-        <p class="text-gray-500 text-justify text-sm">
-          Daftarkan hasil riset maupun inovasi yang Anda lakukan untuk dilakukan
-          standarisasi. Sehingga hasil riset maupun inovasi yang Anda lakukan
-          dapat ikut bersaing baik secara nasional maupun internasional
-        </p>
-        <a
-          href="https://docs.google.com/forms/d/e/1FAIpQLSdSmN9hWx84W-tEERIurajCtDfpmD1oeHSusnQBwfuwuizM3g/viewform?usp=sf_link"
-          class="px-2 py-1 border border-blue-900 text-blue-900 w-fit rounded-lg mt-2 text-xs flex items-center gap-2 hover:bg-blue-50"
-          ><svg
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 24 24"
-            fill="currentColor"
-            class="w-4 h-4"
-          >
-            <path
-              d="M3.478 2.405a.75.75 0 00-.926.94l2.432 7.905H13.5a.75.75 0 010 1.5H4.984l-2.432 7.905a.75.75 0 00.926.94 60.519 60.519 0 0018.445-8.986.75.75 0 000-1.218A60.517 60.517 0 003.478 2.405z"
-            ></path>
-          </svg>
-          <span>Ajukan Layanan</span>
-        </a>
-      </div>
-      <!-- question - start -->
-      <div class="border border-slate-200 p-4 rounded-md shadow-sm">
-        <h3 class="text-blue-900 text-lg md:text-xl font-semibold mb-2">
-          Layanan Penelitian
-        </h3>
-        <p class="text-gray-500 text-justify text-sm">
-          Layanan pengajuan surat izin penelitian untuk keperluan Tugas Akhir,
-          Tugas Kuliah atau kebutuhan lainnya.
-        </p>
-        <div class="flex sm:gap-2 flex-col sm:flex-row my-2">
-          <a
-            href="/layanan/progres-layanan-penelitian"
-            class="px-2 py-1 border border-blue-900 text-blue-900 w-fit rounded-lg mt-2 text-xs flex items-center gap-2 hover:bg-blue-50"
-            ><svg
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 512 512"
-              fill="currentColor"
-              class="w-4 h-4"
-            >
-              <path
-                d="M256 512c141.4 0 256-114.6 256-256S397.4 0 256 0S0 114.6 0 256S114.6 512 256 512zM216 336h24V272H216c-13.3 0-24-10.7-24-24s10.7-24 24-24h48c13.3 0 24 10.7 24 24v88h8c13.3 0 24 10.7 24 24s-10.7 24-24 24H216c-13.3 0-24-10.7-24-24s10.7-24 24-24zm40-144c-17.7 0-32-14.3-32-32s14.3-32 32-32s32 14.3 32 32s-14.3 32-32 32z"
-              ></path>
-            </svg>
-            <span>Progres Pengajuan</span>
-          </a>
-          <a
-            href="https://docs.google.com/forms/d/e/1FAIpQLSfl8q2A2tiPrl-5zlNsn6NcTz2XhWGVb2tPeC031WOlPSVAUw/viewform"
-            class="px-2 py-1 border border-blue-900 text-blue-900 w-fit rounded-lg mt-2 text-xs flex items-center gap-2 hover:bg-blue-50"
-            ><svg
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 24 24"
-              fill="currentColor"
-              class="w-4 h-4"
-            >
-              <path
-                d="M3.478 2.405a.75.75 0 00-.926.94l2.432 7.905H13.5a.75.75 0 010 1.5H4.984l-2.432 7.905a.75.75 0 00.926.94 60.519 60.519 0 0018.445-8.986.75.75 0 000-1.218A60.517 60.517 0 003.478 2.405z"
-              ></path>
-            </svg>
-            <span>Ajukan Layanan</span>
-          </a>
+    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8 mb-6 md:mb-8">
+      <div class="flex flex-col border rounded-lg p-4 pt-6 gap-5">
+        <div class="rounded-lg overflow-hidden shadow-xl">
+          <img
+            src="https://images.pexels.com/photos/8438993/pexels-photo-8438993.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+            alt=""
+            class="w-full"
+          />
         </div>
-      </div>
-      <!-- question - end -->
+        <div class="flex flex-col gap-2">
+          <div class="text-gray-800 text-2xl font-bold text-center">
+            Layanan Pendaftaran Hasil Riset dan Inovasi Teknologi
+          </div>
 
-      <!-- question - start -->
-      <div class="border border-slate-200 p-4 rounded-md shadow-sm">
-        <h3 class="text-blue-900 text-lg md:text-xl font-semibold mb-2">
-          Layanan Kemitraan dan Inkubasi
-        </h3>
-        <p class="text-gray-500 text-justify text-sm">
-          Layanan ini merupakan fasilitas bagi pelaku usaha NTB untuk dapat
-          bergabung menjadi Tenant atau Mitra BRIDA NTB
-        </p>
-        <div class="flex sm:gap-2 flex-col sm:flex-row my-2">
-          <a
-            href="https://docs.google.com/forms/d/e/1FAIpQLSfNaRO7iIf-iG4NjIEaOd9PQ-eHaAk9w_MibSAs0qb5hLYjjQ/viewform?usp=sf_link"
-            class="px-2 py-1 border border-blue-900 text-blue-900 w-fit rounded-lg mt-2 text-xs flex items-center gap-2 hover:bg-blue-50"
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 24 24"
-              fill="currentColor"
-              class="w-4 h-4"
-            >
-              <path
-                d="M3.478 2.405a.75.75 0 00-.926.94l2.432 7.905H13.5a.75.75 0 010 1.5H4.984l-2.432 7.905a.75.75 0 00.926.94 60.519 60.519 0 0018.445-8.986.75.75 0 000-1.218A60.517 60.517 0 003.478 2.405z"
-              ></path>
-            </svg>
-            <span>Pendaftaran Startup</span>
-          </a>
-          <a
-            href="https://docs.google.com/forms/d/e/1FAIpQLSez3b3nk7t4VwVnSF8yWNvA9qAEt_G-vz_Xa20p6wjLjIiHtg/viewform?usp=sf_link"
-            class="px-2 py-1 border border-blue-900 text-blue-900 w-fit rounded-lg mt-2 text-xs flex items-center gap-2 hover:bg-blue-50"
-            ><svg
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 24 24"
-              fill="currentColor"
-              class="w-4 h-4"
-            >
-              <path
-                d="M3.478 2.405a.75.75 0 00-.926.94l2.432 7.905H13.5a.75.75 0 010 1.5H4.984l-2.432 7.905a.75.75 0 00.926.94 60.519 60.519 0 0018.445-8.986.75.75 0 000-1.218A60.517 60.517 0 003.478 2.405z"
-              ></path>
-            </svg>
-            <span>Pendaftaran Mitra</span>
-          </a>
+          <p class="text-gray-500 text-center mx-auto">
+            Daftarkan hasil riset maupun inovasi yang Anda lakukan untuk
+            dilakukan standarisasi.
+          </p>
         </div>
-      </div>
-      <!-- question - end -->
 
-      <!-- question - start -->
-      <div class="border border-slate-200 p-4 rounded-md shadow-sm">
-        <h3 class="text-blue-900 text-lg md:text-xl font-semibold mb-2">
-          Layanan Kepuasan Masyarakat
-        </h3>
-        <p class="text-gray-500 text-justify text-sm">
-          Bantu kami untuk meningkatkan Kualitas Pelayanan dan menjadi lebih
-          baik, dengan cara mengisi form penilaian pada tombol dibawah ini.
-        </p>
-        <div class="flex sm:gap-2 flex-col sm:flex-row my-2">
+        <div class="flex flex-col gap-8 mt-auto">
           <a
-            href="/layanan/kepuasan-masyarakat/survey"
-            class="px-2 py-1 border border-blue-900 text-blue-900 w-fit rounded-lg mt-2 text-xs flex items-center gap-2 hover:bg-blue-50"
+            href="https://docs.google.com/forms/d/e/1FAIpQLSdSmN9hWx84W-tEERIurajCtDfpmD1oeHSusnQBwfuwuizM3g/viewform?usp=sf_link"
+            class="block bg-gray-200 hover:bg-gray-300 focus-visible:ring ring-indigo-300 text-gray-500 active:text-gray-700 text-sm md:text-base font-semibold text-center rounded-lg outline-none transition duration-100 px-8 py-3"
+            >Ajukan Layanan</a
           >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 24 24"
-              fill="currentColor"
-              class="w-4 h-4"
-            >
-              <path
-                d="M3.478 2.405a.75.75 0 00-.926.94l2.432 7.905H13.5a.75.75 0 010 1.5H4.984l-2.432 7.905a.75.75 0 00.926.94 60.519 60.519 0 0018.445-8.986.75.75 0 000-1.218A60.517 60.517 0 003.478 2.405z"
-              ></path>
-            </svg>
-            <span>Ajukan Layanan</span>
-          </a>
-          <KepuasanMasyarakat client:visible />
         </div>
       </div>
-      <!-- question - end -->
+      <div class="flex flex-col border rounded-lg p-4 pt-6 gap-5">
+        <div class="rounded-lg overflow-hidden shadow-xl">
+          <img
+            src="https://images.pexels.com/photos/2280571/pexels-photo-2280571.jpeg?auto=compress&cs=tinysrgb&w=800"
+            alt=""
+            class="w-full"
+          />
+        </div>
+        <div class="flex flex-col gap-2">
+          <div class="text-gray-800 text-2xl font-bold text-center">
+            Layanan Penelitian
+          </div>
 
-      <!-- question - start -->
-      <div class="border border-slate-200 p-4 rounded-md shadow-sm">
-        <h3 class="text-blue-900 text-lg md:text-xl font-semibold mb-2">
-          Layanan Pengaduan
-        </h3>
-        <p class="text-gray-500 text-justify text-sm">
-          Layanan Pengaduan BRIDA NTB kini telah terintegrasi dengan NTB Care,
-          Kanal pengaduan resmi milik Pemerintah Provinsi Nusa Tenggara Barat
-          dan pengaduan secara Nasional melalui Kanal Lapor!
-        </p>
-        <div class="flex flex-col sm:flex-row flex-wrap my-2">
+          <p class="text-gray-500 text-center mx-auto">
+            Layanan pengajuan surat izin penelitian untuk keperluan Tugas Akhir,
+            Tugas Kuliah atau kebutuhan lainnya.
+          </p>
+        </div>
+
+        <LayananPenelitian client:load />
+      </div>
+      <div class="flex flex-col border rounded-lg p-4 pt-6 gap-5">
+        <div class="rounded-lg overflow-hidden shadow-xl">
+          <img
+            src="https://images.pexels.com/photos/3184316/pexels-photo-3184316.jpeg?auto=compress&cs=tinysrgb&w=800"
+            alt=""
+            class="w-full"
+          />
+        </div>
+        <div class="flex flex-col gap-2">
+          <div class="text-gray-800 text-2xl font-bold text-center">
+            Layanan Kemitraan dan Inkubasi
+          </div>
+
+          <p class="text-gray-500 text-center mx-auto">
+            Layanan bagi pelaku usaha NTB untuk dapat bergabung menjadi Tenant
+            atau Mitra BRIDA NTB
+          </p>
+        </div>
+
+        <KemitraanDanInkubasi client:load />
+      </div>
+      <div class="flex flex-col border rounded-lg p-4 pt-6 gap-5">
+        <div class="rounded-lg overflow-hidden shadow-xl">
+          <img
+            src="https://images.unsplash.com/photo-1584609593916-3f7f8fe4222b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
+            alt=""
+            class="w-full"
+          />
+        </div>
+        <div class="flex flex-col gap-2">
+          <div class="text-gray-800 text-2xl font-bold text-center">
+            Layanan Kepuasan Masyarakat
+          </div>
+
+          <p class="text-gray-500 text-center mx-auto">
+            Bantu kami untuk meningkatkan Kualitas Pelayanan dan menjadi lebih
+            baik, dengan cara mengisi form penilaian pada tombol dibawah ini.
+          </p>
+        </div>
+
+        <KepuasanMasyarakat client:load />
+      </div>
+      <div class="flex flex-col border rounded-lg p-4 pt-6 gap-5">
+        <div class="rounded-lg overflow-hidden shadow-xl">
+          <img
+            src="https://images.pexels.com/photos/48195/document-agreement-documents-sign-48195.jpeg?auto=compress&cs=tinysrgb&w=800"
+            alt=""
+            class="w-full"
+          />
+        </div>
+        <div class="flex flex-col gap-2">
+          <div class="text-gray-800 text-2xl font-bold text-center">
+            Layanan Pengaduan
+          </div>
+
+          <p class="text-gray-500 text-center mx-auto">
+            Layanan Pengaduan BRIDA NTB kini telah terintegrasi dengan NTB Care,
+            dan pengaduan secara Nasional melalui Kanal Lapor!
+          </p>
+        </div>
+
+        <LayananPengaduan client:load />
+      </div>
+      <div class="flex flex-col border rounded-lg p-4 pt-6 gap-5">
+        <div class="rounded-lg overflow-hidden shadow-xl">
+          <img
+            src="https://images.unsplash.com/photo-1579578304186-f0626704bbd4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8aW50ZXJufGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=800&q=60"
+            alt=""
+            class="w-full"
+          />
+        </div>
+        <div class="flex flex-col gap-2">
+          <div class="text-gray-800 text-2xl font-bold text-center">
+            Layanan Magang
+          </div>
+
+          <p class="text-gray-500 text-center mx-auto">
+            Meningkatkan kualitas SDM dengan Program Magang bagi Mahasiswa atau
+            Pelajar SMK dari Seluruh Indonesia
+          </p>
+        </div>
+
+        <div class="flex flex-col gap-8 mt-auto">
           <a
-            href="https://care.ntbprov.go.id/"
-            class="px-2 py-1 border border-blue-900 text-blue-900 w-fit rounded-lg mt-2 text-xs flex items-center gap-2 hover:bg-blue-50"
+            href="https://forms.gle/x9tso2rkAyTHTVrZ6"
+            class="block bg-gray-200 hover:bg-gray-300 focus-visible:ring ring-indigo-300 text-gray-500 active:text-gray-700 text-sm md:text-base font-semibold text-center rounded-lg outline-none transition duration-100 px-8 py-3"
+            >Ajukan Layanan</a
           >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 24 24"
-              fill="currentColor"
-              class="w-4 h-4"
-            >
-              <path
-                d="M3.478 2.405a.75.75 0 00-.926.94l2.432 7.905H13.5a.75.75 0 010 1.5H4.984l-2.432 7.905a.75.75 0 00.926.94 60.519 60.519 0 0018.445-8.986.75.75 0 000-1.218A60.517 60.517 0 003.478 2.405z"
-              ></path>
-            </svg>
-            <span>Pengaduan Melalui NTB Care</span>
-          </a>
-          <a
-            href="https://www.lapor.go.id/"
-            class="px-2 py-1 border border-blue-900 text-blue-900 w-fit rounded-lg mt-2 text-xs flex items-center gap-2 hover:bg-blue-50"
-            ><svg
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 24 24"
-              fill="currentColor"
-              class="w-4 h-4"
-            >
-              <path
-                d="M3.478 2.405a.75.75 0 00-.926.94l2.432 7.905H13.5a.75.75 0 010 1.5H4.984l-2.432 7.905a.75.75 0 00.926.94 60.519 60.519 0 0018.445-8.986.75.75 0 000-1.218A60.517 60.517 0 003.478 2.405z"
-              ></path>
-            </svg>
-            <span>Pengaduan Melalui Kanal Lapor</span>
-          </a>
-          <a
-            href="https://forms.gle/Tg245jn6AKdbynRi6"
-            class="px-2 py-1 border border-blue-900 text-blue-900 w-fit rounded-lg mt-2 text-xs flex items-center gap-2 hover:bg-blue-50"
-            ><svg
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 24 24"
-              fill="currentColor"
-              class="w-4 h-4"
-            >
-              <path
-                d="M3.478 2.405a.75.75 0 00-.926.94l2.432 7.905H13.5a.75.75 0 010 1.5H4.984l-2.432 7.905a.75.75 0 00.926.94 60.519 60.519 0 0018.445-8.986.75.75 0 000-1.218A60.517 60.517 0 003.478 2.405z"
-              ></path>
-            </svg>
-            <span>Penyalahgunaan Wewenang</span>
-          </a>
         </div>
       </div>
-      <div class="border border-slate-200 p-4 rounded-md shadow-sm">
-        <h3 class="text-blue-900 text-lg md:text-xl font-semibold mb-2">
-          Layanan Informasi Publik
-        </h3>
-        <p class="text-gray-500 text-justify text-sm mb-2">
-          Kewajiban Badan Riset dan Inovasi Daerah Provinsi NTB adalah
-          memberikan pelayanan informasi kepada pemohon informasi Publik secara
-          cepat, tepat waktu, biaya proporsional dan cara yang mudah.
-        </p>
-        <p class="text-gray-500 text-justify text-sm">
-          Untuk dapat memperoleh salinan informasi yang Anda butuhkan, Anda
-          dapat mengisi formulir yang ada dan mengikuti tata cara untuk
-          memperoleh informasi publik dengan standar biaya layanan informasi
-          yang berlaku.
-        </p>
-        <div class="flex sm:gap-2 flex-col sm:flex-row my-2">
-          <a
-            href="https://forms.gle/Hys3uDhYvUsXM2uD9"
-            class="px-2 py-1 border border-blue-900 text-blue-900 w-fit rounded-lg mt-2 text-xs flex items-center gap-2 hover:bg-blue-50"
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 24 24"
-              fill="currentColor"
-              class="w-4 h-4"
-            >
-              <path
-                d="M3.478 2.405a.75.75 0 00-.926.94l2.432 7.905H13.5a.75.75 0 010 1.5H4.984l-2.432 7.905a.75.75 0 00.926.94 60.519 60.519 0 0018.445-8.986.75.75 0 000-1.218A60.517 60.517 0 003.478 2.405z"
-              ></path>
-            </svg>
-            <span>Form Permohonan</span>
-          </a>
-          <a
-            href="https://drive.google.com/file/d/1BZQ2XaC9Zz-J9c4EKHEuGEcTUo_I103T/view?usp=share_link"
-            class="px-2 py-1 border border-blue-900 text-blue-900 w-fit rounded-lg mt-2 text-xs flex items-center gap-2 hover:bg-blue-50"
-            ><svg
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 24 24"
-              fill="currentColor"
-              class="w-4 h-4"
-            >
-              <path
-                d="M3.478 2.405a.75.75 0 00-.926.94l2.432 7.905H13.5a.75.75 0 010 1.5H4.984l-2.432 7.905a.75.75 0 00.926.94 60.519 60.519 0 0018.445-8.986.75.75 0 000-1.218A60.517 60.517 0 003.478 2.405z"
-              ></path>
-            </svg>
-            <span>Standar Biaya Layanan</span>
-          </a>
-        </div>
-      </div>
-      <div class="border border-slate-200 p-4 rounded-md shadow-sm">
-        <h3 class="text-blue-900 text-lg md:text-xl font-semibold mb-2">
-          Layanan Magang
-        </h3>
-        <p class="text-gray-500 text-justify text-sm">
-          Meningkatkan kualitas SDM dengan Program Magang bagi Mahasiswa atau
-          Pelajar SMK dari Seluruh Indonesia
-        </p>
-        <a
-          href="https://forms.gle/x9tso2rkAyTHTVrZ6"
-          class="px-2 py-1 border border-blue-900 text-blue-900 w-fit rounded-lg mt-2 text-xs flex items-center gap-2 hover:bg-blue-50"
-          ><svg
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 24 24"
-            fill="currentColor"
-            class="w-4 h-4"
-          >
-            <path
-              d="M3.478 2.405a.75.75 0 00-.926.94l2.432 7.905H13.5a.75.75 0 010 1.5H4.984l-2.432 7.905a.75.75 0 00.926.94 60.519 60.519 0 0018.445-8.986.75.75 0 000-1.218A60.517 60.517 0 003.478 2.405z"
-            ></path>
-          </svg>
-          <span>Ajukan Layanan</span>
-        </a>
-      </div>
-      <!-- question - end -->
     </div>
   </div>
 
-  <div class="bg-white py-6 sm:py-8 lg:py-12">
+  <div class="bg-white">
     <div
       class="md:h-80 flex flex-col sm:flex-row bg-blue-100 rounded-lg overflow-hidden"
     >
@@ -346,20 +209,22 @@ import KepuasanMasyarakat from "@components/page-components/layanan/KepuasanMasy
         <h2
           class="text-blue-900 text-xl md:text-2xl lg:text-4xl font-bold mb-4"
         >
-          PPID BRIDA NTB
+          Layanan Informasi Publik
         </h2>
 
-        <p class="max-w-md text-gray-600 mb-8">
-          Pejabat Pengelola Informasi dan Dokumentasi (PPID) adalah pejabat yang
-          bertanggung jawab di bidang penyimpanan, pendokumentasian, penyediaan
-          dan/ atau pelayanan informasi di badan publik.
+        <p class="max-w-2xl text-gray-600 mb-8">
+          Kewajiban Badan Riset dan Inovasi Daerah Provinsi NTB adalah
+          memberikan pelayanan informasi kepada pemohon informasi Publik secara
+          cepat, tepat waktu, biaya proporsional dan cara yang mudah. Untuk
+          dapat memperoleh salinan informasi yang Anda butuhkan, Anda dapat
+          mengisi formulir yang ada dan mengikuti tata cara untuk memperoleh
+          informasi publik dengan standar biaya layanan informasi yang berlaku.
         </p>
-
         <div class="mt-auto">
           <a
-            href="/ppid"
+            href="/ppid/prosedur"
             class="flex items-center w-fit gap-2 bg-blue-500 hover:bg-white hover:text-blue-900 active:bg-gray-200 focus-visible:ring ring-indigo-300 text-white text-sm md:text-base font-semibold text-center rounded-lg outline-none transition duration-100 px-8 py-3"
-            >Layanan PPID <svg
+            >Ajukan Layanan <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 24 24"
               fill="currentColor"
