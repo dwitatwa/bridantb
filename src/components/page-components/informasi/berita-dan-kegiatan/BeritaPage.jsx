@@ -1,12 +1,19 @@
-import { useState, useEffect } from "react";
-// import { createClient } from "contentful";
+import { useState, useEffect, lazy, Suspense } from "react";
+import { createClient } from "contentful";
 
-import contentful from "contentful";
-const { createClient } = contentful;
+const ModalFilter = lazy(() => import("./filter/ModalFilter"));
+
+// import contentful from "contentful";
+// const { createClient } = contentful;
 
 export default function BeritaSection() {
   const [items, setItems] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
+  const [toggleFilter, setToggleFilter] = useState(false);
+
+  const handleToggle = () => {
+    setToggleFilter(!toggleFilter);
+  };
 
   const getData = (length) => {
     createClient({
@@ -39,17 +46,60 @@ export default function BeritaSection() {
         <p className="text-blue-500 lg:text-lg font-semibold text-center mb-2 md:mb-3">
           Informasi Seputar
         </p>
-
         <h2 className="text-gray-800 text-2xl lg:text-3xl font-bold text-center mb-4 md:mb-6">
           Berita dan Kegiatan BRIDA NTB
         </h2>
-
         <p className="max-w-screen-md text-gray-500 md:text-lg text-center mx-auto">
           Laman ini merupakan laman yang berisi mengenai Berita dan Kegiatan
           yang dilakukan oleh BRIDA NTB. Informasi selengkapnya dari masing -
           masing berita dapat Anda peroleh dengan mengklik gambar pada berita
           tersebut.
         </p>
+      </div>
+      <div className="mb-10">
+        <div className="flex flex-col sm:flex-row justify-center items-center gap-4">
+          <button
+            className="sm:inline-block bg-white hover:bg-gray-100 active:bg-gray-200 focus-visible:ring ring-indigo-300 border text-gray-500 text-sm md:text-base font-semibold text-center rounded-lg outline-none transition duration-100 px-4 md:px-8 py-2 md:py-3"
+            onClick={handleToggle}
+          >
+            Filter Berita
+          </button>
+          <div className="flex items-center gap-5 bg-white hover:bg-gray-100 active:bg-gray-200 focus-visible:ring ring-indigo-300 border text-gray-500 text-sm md:text-base font-semibold rounded-lg outline-none transition duration-100 pr-5">
+            <input
+              type="text"
+              className="bg-white hover:bg-gray-100 active:bg-gray-200 text-gray-500 text-sm md:text-base font-semibold outline-none transition duration-100 rounded-lg py-2 md:py-3 pl-4"
+            />
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              className="icon icon-tabler icon-tabler-search"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              strokeWidth="2"
+              stroke="currentColor"
+              fill="none"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            >
+              <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+              <circle cx="10" cy="10" r="7"></circle>
+              <line x1="21" y1="21" x2="15" y2="15"></line>
+            </svg>
+          </div>
+        </div>
+        {toggleFilter ? (
+          <Suspense
+            fallback={
+              <div className="bg-gray-100 mt-5 p-3 rounded-lg flex justify-center">
+                Loading ...
+              </div>
+            }
+          >
+            <ModalFilter setItems={setItems} />
+          </Suspense>
+        ) : (
+          ""
+        )}
       </div>
       <div className="grid sm:grid-cols-2 lg:grid-cols-2 xl:grid-cols-4 gap-4 md:gap-6 xl:gap-8">
         {items.map((item) => (
