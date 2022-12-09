@@ -4,9 +4,9 @@ import BulanDrop from "./BulanDrop";
 import TanggalDrop from "./TanggalDrop";
 import TahunDrop from "./TahunDrop";
 
-import { createClient } from "contentful";
-// import contentful from "contentful";
-// const { createClient } = contentful;
+// import { createClient } from "contentful";
+import contentful from "contentful";
+const { createClient } = contentful;
 
 type contextType = {
   setTglState: Dispatch<SetStateAction<number>>;
@@ -36,9 +36,10 @@ const bulan = [
 
 type Props = {
   setItems: Dispatch<SetStateAction<never[]>>;
+  setLoading: Dispatch<SetStateAction<boolean>>;
 };
 
-export default function ModalFilter({ setItems }: Props) {
+export default function ModalFilter({ setItems, setLoading }: Props) {
   const [tglState, setTglState] = useState(1);
   const [blnState, setBlnState] = useState(1);
   const [thnState, setThnState] = useState(1970);
@@ -58,24 +59,73 @@ export default function ModalFilter({ setItems }: Props) {
     const thn = new Date().getFullYear();
 
     setTglState(tgl);
-    setBlnState(bln);
+    setBlnState(bln + 1);
     setThnState(thn);
   }, []);
 
+  type filterType = {
+    content_type: string;
+    "fields.tanggalBerita"?: string;
+    "fields.tanggalBerita[gte]"?: string;
+    "fields.tanggalBerita[lte]"?: string;
+  };
+
+  const setFilter = (): filterType => {
+    let entries: filterType = {
+      content_type: "berita",
+    };
+
+    let tanggal = tglState < 10 ? "0" + tglState : tglState;
+    let bulan = blnState < 10 ? "0" + blnState : blnState;
+
+    // Filter Semua Tanggal
+    if (tanggal === "00" && bulan !== "00") {
+      tanggal = "01";
+      const blnPls1 =
+        blnState < 9
+          ? "0" + (blnState + 1)
+          : blnState + 1 > 12
+          ? blnState
+          : blnState + 1;
+      entries["fields.tanggalBerita[gte]"] = `${thnState}-${bulan}-${tanggal}`;
+      entries[
+        "fields.tanggalBerita[lte]"
+      ] = `${thnState}-${blnPls1}-${tanggal}`;
+      return entries;
+    }
+
+    // Filter Semua Bulan
+    if (tanggal === "00" && bulan === "00" && thnState !== 1970) {
+      tanggal = "01";
+      bulan = "01";
+      let lastTGL = "31";
+      let lastBLN = "12";
+      entries["fields.tanggalBerita[gte]"] = `${thnState}-${bulan}-${tanggal}`;
+      entries[
+        "fields.tanggalBerita[lte]"
+      ] = `${thnState}-${lastBLN}-${lastTGL}`;
+      return entries;
+    }
+    if (tanggal === "00" && bulan === "00" && thnState === 1970) {
+      return entries;
+    }
+    // Filter Semua Tahun
+
+    entries["fields.tanggalBerita"] = `${thnState}-${bulan}-${tanggal}`;
+    return entries;
+  };
+
   useEffect(() => {
-    const bulan = blnState < 10 ? "0" + (blnState + 1) : blnState + 1;
-    const tanggal = tglState < 10 ? "0" + tglState : tglState;
-    const filter = `${thnState}-${bulan}-${tanggal}`;
+    setLoading(true);
+    const filter = setFilter();
     createClient({
       space: "yhv40pnlg70o",
       accessToken: "ho3n-fblnmKTj8z8e61eQ6L1L4ORhzKKo-S5IuXKvVk",
     })
-      .getEntries({
-        content_type: "berita",
-        "fields.tanggalBerita": filter,
-      })
+      .getEntries(filter)
       .then((res: any) => {
         setItems(res.items);
+        setLoading(false);
       })
       .catch((e) => console.error(e));
   }, [tglState, blnState, thnState]);

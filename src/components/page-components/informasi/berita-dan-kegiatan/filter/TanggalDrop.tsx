@@ -51,7 +51,9 @@ export default function TanggalDrop() {
       >
         <span className="w-full flex flex-col sm:flex-row justify-center gap-1 items-center">
           <span>Tanggal :</span>
-          <span className="font-bold text-blue-500">{tglState}</span>
+          <span className="font-bold text-blue-500">
+            {tglState === 0 ? "~" : tglState}
+          </span>
         </span>
       </div>
       <div className="border bg-white text-xs rounded-md h-[140px] overflow-y-auto">

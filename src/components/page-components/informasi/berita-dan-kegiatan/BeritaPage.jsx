@@ -1,10 +1,10 @@
 import { useState, useEffect, lazy, Suspense } from "react";
-import { createClient } from "contentful";
+// import { createClient } from "contentful";
+import contentful from "contentful";
+const { createClient } = contentful;
 
+import Searching from "./search/Searching";
 const ModalFilter = lazy(() => import("./filter/ModalFilter"));
-
-// import contentful from "contentful";
-// const { createClient } = contentful;
 
 export default function BeritaSection() {
   const [items, setItems] = useState([]);
@@ -64,28 +64,7 @@ export default function BeritaSection() {
           >
             Filter Berita
           </button>
-          <div className="flex items-center gap-5 bg-white hover:bg-gray-100 active:bg-gray-200 focus-visible:ring ring-indigo-300 border text-gray-500 text-sm md:text-base font-semibold rounded-lg outline-none transition duration-100 pr-5">
-            <input
-              type="text"
-              className="bg-white hover:bg-gray-100 active:bg-gray-200 text-gray-500 text-sm md:text-base font-semibold outline-none transition duration-100 rounded-lg py-2 md:py-3 pl-4"
-            />
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              className="icon icon-tabler icon-tabler-search"
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              strokeWidth="2"
-              stroke="currentColor"
-              fill="none"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-            >
-              <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-              <circle cx="10" cy="10" r="7"></circle>
-              <line x1="21" y1="21" x2="15" y2="15"></line>
-            </svg>
-          </div>
+          <Searching setItems={setItems} setLoading={setIsLoading} />
         </div>
         {toggleFilter ? (
           <Suspense
@@ -95,7 +74,7 @@ export default function BeritaSection() {
               </div>
             }
           >
-            <ModalFilter setItems={setItems} />
+            <ModalFilter setItems={setItems} setLoading={setIsLoading} />
           </Suspense>
         ) : (
           ""
@@ -145,14 +124,18 @@ export default function BeritaSection() {
           </div>
         </div>
       ) : null}
-      <div className="flex justify-center mt-10">
-        <button
-          className="inline-block bg-white hover:bg-gray-100 active:bg-gray-200 focus-visible:ring ring-blue-300 border text-gray-500 text-sm md:text-base font-semibold text-center rounded-lg outline-none transition duration-100 px-4 md:px-8 py-2 md:py-3"
-          onClick={loadMore}
-        >
-          Muat Lebih Banyak
-        </button>
-      </div>
+      {toggleFilter ? (
+        ""
+      ) : (
+        <div className="flex justify-center mt-10">
+          <button
+            className="inline-block bg-white hover:bg-gray-100 active:bg-gray-200 focus-visible:ring ring-blue-300 border text-gray-500 text-sm md:text-base font-semibold text-center rounded-lg outline-none transition duration-100 px-4 md:px-8 py-2 md:py-3"
+            onClick={loadMore}
+          >
+            Muat Lebih Banyak
+          </button>
+        </div>
+      )}
     </section>
   );
 }

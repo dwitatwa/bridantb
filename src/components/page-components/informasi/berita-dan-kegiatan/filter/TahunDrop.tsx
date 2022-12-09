@@ -26,7 +26,9 @@ export default function TahunDrop() {
       >
         <span className="w-full flex flex-col sm:flex-row justify-center gap-1 items-center">
           <span>Tahun :</span>
-          <span className="font-bold text-blue-500">{thnState}</span>
+          <span className="font-bold text-blue-500">
+            {thnState === 1970 ? "~" : thnState}
+          </span>
         </span>
       </div>
       <div className="border bg-white text-xs rounded-md h-[140px] overflow-y-auto">

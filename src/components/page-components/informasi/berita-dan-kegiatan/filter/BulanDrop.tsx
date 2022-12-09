@@ -3,6 +3,7 @@ import type { MouseEvent } from "react";
 import { FilterContext } from "./ModalFilter";
 
 const value = [
+  "~",
   "Januari",
   "Februari",
   "Maret",
@@ -52,16 +53,20 @@ export default function BulanDrop() {
         >
           Semua
         </div>
-        {value.map((value, index) => (
-          <button
-            className={`px-2 py-2 text-center border-b cursor-pointer hover:bg-slate-200 active:bg-slate-300`}
-            key={value}
-            onClick={handleSelect}
-            value={index}
-          >
-            {value}
-          </button>
-        ))}
+        {value.map((value, index) => {
+          if (index !== 0) {
+            return (
+              <button
+                className={`px-2 py-2 text-center border-b cursor-pointer hover:bg-slate-200 active:bg-slate-300`}
+                key={value}
+                onClick={handleSelect}
+                value={index}
+              >
+                {value}
+              </button>
+            );
+          }
+        })}
       </div>
     </div>
   );
