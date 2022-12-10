@@ -1,8 +1,11 @@
 import { useState, useEffect } from "react";
 // import { createClient } from "contentful";
+// import contentful from "contentful";
+// const { createClient } = contentful;
 
 import contentful from "contentful";
-const { createClient } = contentful;
+//@ts-ignore
+const { createClient } = contentful.default ? contentful.default : contentful;
 
 export default function Berita() {
   const [items, setItems] = useState([]);
